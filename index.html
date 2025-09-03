@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Interativo de LaTeX e Overleaf</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <div class="flex">
+        <nav id="sidebar" class="fixed top-0 left-0 h-screen w-64 bg-stone-800 text-stone-200 p-5 hidden lg:block overflow-y-auto">
+            <h2 class="text-xl font-bold mb-6 text-teal-300">Guia de LaTeX</h2>
+            <ul class="space-y-2">
+                <li><a href="#inicio" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Início</a></li>
+                <li><a href="#modulo0" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 0: Filosofia</a></li>
+                <li><a href="#modulo1" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 1: O Essencial</a></li>
+                <li><a href="#modulo2" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 2: Estrutura</a></li>
+                <li><a href="#modulo3" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 3: Matemática</a></li>
+                <li><a href="#modulo4" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 4: Flutuantes</a></li>
+                <li><a href="#modulo5" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 5: Bibliografia</a></li>
+                <li><a href="#modulo6" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 6: Padrão ABNT</a></li>
+                <li><a href="#modulo7" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 7: Customização</a></li>
+                <li><a href="#modulo8" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 8: Projeto Final</a></li>
+            </ul>
+        </nav>
+
+        <main class="w-full lg:ml-64 p-4 sm:p-6 md:p-10">
+            <header id="inicio" class="module-section mb-12">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-stone-200">
+                    <h1 class="text-4xl font-bold text-teal-700 mb-4">Guia Interativo de LaTeX com Overleaf</h1>
+                    <p class="text-lg text-stone-600 mb-6">Esta aplicação transforma o guia de estudos de LaTeX em uma experiência de aprendizado interativa. Navegue pelos módulos, visualize a distribuição do conteúdo e copie os exemplos de código para acelerar seu domínio sobre a ferramenta.</p>
+                    <div class="chart-container relative h-80 w-full max-w-3xl mx-auto">
+                        <canvas id="topicsChart"></canvas>
+                    </div>
+                     <p class="text-sm text-center text-stone-500 mt-2">Distribuição de Foco do Guia de Estudos</p>
+                </div>
+            </header>
+
+            <div id="module-content" class="space-y-12">
+                
+                <section id="modulo0" class="module-section">
+                    <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 0: A Filosofia do LaTeX e o Ambiente Overleaf</h2>
+                    <p class="mb-6 text-stone-600">Antes de escrever o código, é crucial entender o "porquê". Este módulo apresenta os conceitos fundamentais que diferenciam o LaTeX de outros editores de texto e como o Overleaf facilita seu uso.</p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200">
+                            <h3 class="font-semibold text-lg text-teal-700 mb-2">1. Foco no Conteúdo</h3>
+                            <p>Com o LaTeX, você se concentra na escrita e na estrutura lógica do seu texto. A formatação é tratada separadamente, garantindo consistência visual.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200">
+                            <h3 class="font-semibold text-lg text-teal-700 mb-2">2. Qualidade Tipográfica Superior</h3>
+                            <p>O LaTeX utiliza algoritmos avançados de quebra de linha e justificação, produzindo documentos com uma qualidade visual profissional.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200">
+                            <h3 class="font-semibold text-lg text-teal-700 mb-2">3. Estabilidade e Longevidade</h3>
+                            <p>Documentos em formato <code>.tex</code> são arquivos de texto puro, independentes de plataforma e acessíveis por décadas.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200">
+                            <h3 class="font-semibold text-lg text-teal-700 mb-2">4. Ecossistema Poderoso</h3>
+                            <p>O LaTeX é sustentado por uma vasta comunidade e um repositório central de pacotes (CTAN) para qualquer necessidade de formatação.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="modulo1" class="module-section">
+                    <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 1: O Documento Essencial</h2>
+                    <p class="mb-6 text-stone-600">Todo documento LaTeX possui uma estrutura fundamental. Aprenda sobre o preâmbulo, o corpo do documento e as classes que definem seu tipo.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200">
+                        <h3 class="font-semibold text-lg text-teal-700 mb-2">Estrutura Mínima e Opções da Classe</h3>
+                        <p class="mb-4">O comando <code>\documentclass</code> pode receber opções que alteram o layout global, como tamanho da fonte (<code>12pt</code>) e formato do papel (<code>a4paper</code>).</p>
+                        <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                            <button class="copy-button" aria-label="Copiar código">Copiar</button>
+                            <pre><code class="language-latex">\documentclass[12pt, a4paper, twoside]{book}
+
+% --- PREÂMBULO COMEÇA AQUI ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+% ... outros pacotes ...
+% --- PREÂMBULO TERMINA AQUI ---
+
+\begin{document}
+% O conteúdo do seu livro vai aqui...
+\end{document}</code></pre>
+                        </div>
+                         <div class="mt-6 expert-tip">
+                            <p class="font-semibold text-teal-800">Dica de Especialista</p>
+                            <p class="text-stone-700">Mantenha seu preâmbulo organizado. Adicione comentários explicando o propósito de cada pacote. Isso torna seu documento mais fácil de manter.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="modulo2" class="module-section">
+                    <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 2: Formatando Conteúdo e Estrutura</h2>
+                    <p class="mb-6 text-stone-600">Aprenda a organizar suas ideias de forma lógica e hierárquica usando seções, listas e ênfases, dando ao seu texto uma estrutura clara e profissional.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200 space-y-4">
+                        <h3 class="font-semibold text-lg text-teal-700">Ênfase Semântica</h3>
+                        <p class="mb-4">Use <code>\emph{...}</code> para dar ênfase. A vantagem é que o LaTeX adapta a formatação ao contexto. Se o texto ao redor já estiver em itálico, <code>\emph</code> usará o formato reto para criar contraste.</p>
+                        <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                            <button class="copy-button" aria-label="Copiar código">Copiar</button>
+                            <pre><code class="language-latex">\section{Análise de Resultados}
+\textit{Este texto está em itálico.} \emph{Este também.}
+
+\textit{Veja a diferença aqui: \emph{o texto interno volta ao normal.}}</code></pre>
+                        </div>
+                        <div class="mt-6 expert-tip">
+                            <p class="font-semibold text-teal-800">Boas Práticas de Estruturação</p>
+                            <p class="text-stone-700">Evite usar quebras de linha manuais (<code>\\</code>). Para espaçamento, use parágrafos (uma linha em branco no código). Deixe o LaTeX gerenciar o fluxo do texto.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="modulo3" class="module-section">
+                    <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 3: O Poder da Matemática</h2>
+                    <p class="mb-6 text-stone-600">A principal razão pela qual muitos escolhem o LaTeX é sua capacidade superior de diagramar expressões matemáticas.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200 space-y-4">
+                        <h3 class="font-semibold text-lg text-teal-700">Referenciando Equações e Unidades Físicas</h3>
+                        <p class="mb-4">Para artigos científicos, é essencial numerar e referenciar equações. O pacote <code>siunitx</code> oferece uma forma padronizada de formatar números e unidades.</p>
+                        <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                            <button class="copy-button" aria-label="Copiar código">Copiar</button>
+                            <pre><code class="language-latex">\usepackage{amsmath}
+\usepackage{siunitx} % Para unidades físicas
+
+% ... no corpo do documento ...
+A aceleração da gravidade é de \SI{9.8}{\meter\per\second\squared}.
+A Equação~\ref{eq:relatividade} define a relação entre massa e energia.
+\begin{equation}
+    E = mc^2
+    \label{eq:relatividade}
+\end{equation}</code></pre>
+                        </div>
+                        <div class="mt-6 expert-tip">
+                            <p class="font-semibold text-teal-800">Cenário de Uso Real</p>
+                            <p class="text-stone-700">Em um artigo de engenharia, usar <code>amsmath</code>, <code>\label</code>, <code>\ref</code> e <code>siunitx</code> não é apenas uma conveniência, é um requisito para a publicação.</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="modulo4" class="module-section">
+                    <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 4: Elementos Flutuantes: Figuras e Tabelas</h2>
+                    <p class="mb-6 text-stone-600">Enriqueça seus documentos com elementos visuais e dados organizados. Aprenda a inserir, legendar e referenciar figuras e tabelas.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200">
+                        <h3 class="font-semibold text-lg text-teal-700 mb-2">Controlando Flutuantes e Tabelas Flexíveis</h3>
+                        <p class="mb-4">O LaTeX posiciona figuras e tabelas onde julga que o layout ficará melhor. Para tabelas que ocupam toda a largura, o pacote <code>tabularx</code> é a ferramenta ideal.</p>
+                        <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                            <button class="copy-button" aria-label="Copiar código">Copiar</button>
+                            <pre><code class="language-latex">\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+\begin{table}[ht]
+    \centering
+    \caption{Tabela com coluna de texto flexível.}
+    \label{tab:dados}
+    \begin{tabularx}{\textwidth}{l X r}
+        \toprule
+        ID & Descrição & Valor \\
+        \midrule
+        01 & Descrição longa que pode ocupar múltiplas linhas. & 150.7 \\
+        \bottomrule
+    \end{tabularx}
+\end{table}</code></pre>
+                        </div>
+                         <div class="mt-6 expert-tip">
+                            <p class="font-semibold text-teal-800">Dica de Especialista: Posição do `label`</p>
+                            <p class="text-stone-700">Sempre coloque o comando <code>\label</code> <strong>depois</strong> do comando <code>\caption</code>. O <code>\label</code> se associa ao último contador incrementado. Se vier antes, pode se referir à seção em vez da figura/tabela.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="modulo5" class="module-section">
+                    <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 5: Gerenciamento de Bibliografia com BibTeX</h2>
+                    <p class="mb-6 text-stone-600">Automatize suas citações e referências. Com BibTeX, você cria um banco de dados de referências e o LaTeX cuida da formatação.</p>
+                     <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200">
+                         <h3 class="font-semibold text-lg text-teal-700 mb-2">BibTeX vs. BibLaTeX</h3>
+                         <p class="mb-4">BibTeX é o sistema clássico. Para necessidades mais complexas (múltiplas bibliografias, customização avançada), o sistema mais moderno <strong>BibLaTeX</strong> oferece maior flexibilidade.</p>
+                        <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                            <button class="copy-button" aria-label="Copiar código">Copiar</button>
+                            <pre><code class="language-bibtex">% Em referencias.bib
+@misc{overleaf_site,
+    author = {{Overleaf}},
+    title = {Overleaf, The Online LaTeX Editor},
+    year = {2025},
+    howpublished = {\url{https://www.overleaf.com}},
+    note = {Acessado em 03-09-2025}
+}</code></pre>
+                        </div>
+                        <div class="mt-6 expert-tip">
+                            <p class="font-semibold text-teal-800">Cenário de Uso Real: Uma Tese de Doutorado</p>
+                            <p class="text-stone-700">Use um gerenciador de referências (Zotero, Mendeley) para criar seu arquivo <code>.bib</code>. No LaTeX, você pode mudar o estilo de citação (ABNT, APA, IEEE) alterando apenas uma linha de código.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="modulo6" class="module-section">
+                    <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 6: Padrões Acadêmicos Brasileiros com abnTeX2</h2>
+                    <p class="mb-6 text-stone-600">O ecossistema <code>abnTeX2</code> é a solução definitiva para criar trabalhos acadêmicos no padrão da ABNT, automatizando capa, sumário e referências.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200">
+                        <h3 class="font-semibold text-lg text-teal-700 mb-2">Além da Estrutura: Listas e Citações Longas</h3>
+                        <p class="mb-4">O <code>abnTeX2</code> gera a Lista de Figuras/Tabelas. Para citações com mais de 3 linhas, o ambiente <code>citacao</code> aplica o recuo e a fonte exigidos pela ABNT.</p>
+                        <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                            <button class="copy-button" aria-label="Copiar código">Copiar</button>
+                            <pre><code class="language-latex">% ...
+\begin{document}
+% ...
+\listoffigures
+\listoftables
+\tableofcontents
+
+\textual
+\chapter{Revisão da Literatura}
+Conforme destaca Knuth \cite[p. 5]{knuth1984}:
+\begin{citacao}
+A principal vantagem do TeX é sua capacidade de produzir
+documentos de alta qualidade tipográfica.
+\end{citacao}
+% ...
+\end{document}</code></pre>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="modulo7" class="module-section">
+                    <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 7: Escalando Projetos e Personalização</h2>
+                    <p class="mb-6 text-stone-600">Para documentos longos, organize o projeto em múltiplos arquivos. Criar seus próprios comandos pode economizar tempo e aumentar a consistência.</p>
+                     <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200">
+                         <h3 class="font-semibold text-lg text-teal-700 mb-2"><code>\input</code> vs. <code>\include</code> e Ambientes Customizados</h3>
+                         <p class="mb-4"><code>\input</code> é um "copia e cola". <code>\include</code> é mais poderoso: inicia uma nova página e permite compilar apenas capítulos específicos com <code>\includeonly</code>, acelerando a compilação de livros.</p>
+                        <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                            <button class="copy-button" aria-label="Copiar código">Copiar</button>
+                            <pre><code class="language-latex">% No preâmbulo
+\newenvironment{objetivo}
+    {\begin{quote}\sffamily\bfseries}
+    {\end{quote}}
+
+% No texto
+\begin{objetivo}
+O objetivo desta seção é demonstrar a criação de
+ambientes customizados em LaTeX.
+\end{objetivo}</code></pre>
+                        </div>
+                         <div class="mt-6 expert-tip">
+                            <p class="font-semibold text-teal-800">Boas Práticas: Crie seu próprio pacote <code>.sty</code></p>
+                            <p class="text-stone-700">Para projetos grandes, mova seu preâmbulo (pacotes, comandos) para um arquivo <code>meuestilo.sty</code>. No documento principal, use <code>\usepackage{meuestilo}</code> para manter o código limpo e portátil.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="modulo8" class="module-section">
+                    <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 8: Projeto Final - Artigo Acadêmico ABNT</h2>
+                    <p class="mb-6 text-stone-600">É hora de consolidar o conhecimento. O objetivo é criar um documento acadêmico completo, bem estruturado e seguindo o padrão ABNT.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200">
+                        <h3 class="font-semibold text-lg text-teal-700 mb-2">Dicas para o Sucesso</h3>
+                        <ul class="list-disc list-inside space-y-2 text-stone-600">
+                            <li><strong>Comece com um template:</strong> Use um modelo confiável (como os do Overleaf ou abnTeX2).</li>
+                            <li><strong>Compile com frequência:</strong> É mais fácil encontrar um erro em 5 linhas novas do que em 5 páginas.</li>
+                            <li><strong>Use o controle de versão:</strong> O Overleaf possui histórico. Para projetos sérios, conecte-o a um repositório Git.</li>
+                            <li><strong>Entenda os warnings:</strong> Avisos como "citation undefined" ou "overfull hbox" indicam pontos que podem ser melhorados.</li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="js/script.js" defer></script>
+</body>
+</html>
