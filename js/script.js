@@ -1,8 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
+// Adiciona um listener que executa o código quando o HTML da página é carregado
+document.addEventListener('DOMContentLoaded', function () {
     initializeChart();
+    renderMathematics();
     setupCopyButtons();
     setupNavigationObserver();
 });
+
+/**
+ * Renderiza todas as expressões matemáticas na página usando a biblioteca KaTeX.
+ */
+function renderMathematics() {
+    // A função renderMathInElement é fornecida pela biblioteca KaTeX
+    if (typeof renderMathInElement === 'function') {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '\\[', right: '\\]', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\begin{align}', right: '\\end{align}', display: true}
+            ]
+        });
+    }
+}
 
 /**
  * Inicializa o gráfico de tópicos usando Chart.js.
@@ -27,69 +47,36 @@ function initializeChart() {
             indexAxis: 'y',
             responsive: true,
             maintainAspectRatio: false,
-            plugins: {
-                legend: { display: false },
-                tooltip: {
-                    callbacks: {
-                        label: context => `${context.dataset.label}: ${context.raw}%`
-                    }
-                }
-            },
-            scales: {
-                x: {
-                    beginAtZero: true,
-                    ticks: {
-                        callback: value => `${value}%`
-                    }
-                }
-            }
+            plugins: { legend: { display: false } },
+            scales: { x: { beginAtZero: true, ticks: { callback: value => value + "%" } } }
         }
     });
 }
 
 /**
  * Configura a funcionalidade de copiar para todos os botões de código.
- * Usa a API moderna navigator.clipboard.
  */
 function setupCopyButtons() {
-    const copyButtons = document.querySelectorAll('.copy-button');
-    
-    copyButtons.forEach(button => {
-        button.addEventListener('click', async () => {
-            const codeElement = button.nextElementSibling?.querySelector('code');
-            if (!codeElement) return;
-
-            const code = codeElement.innerText;
-
-            try {
-                await navigator.clipboard.writeText(code);
+    document.querySelectorAll('.copy-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const code = button.nextElementSibling.querySelector('code').innerText;
+            navigator.clipboard.writeText(code).then(() => {
                 button.textContent = 'Copiado!';
-                setTimeout(() => {
-                    button.textContent = 'Copiar';
-                }, 2000);
-            } catch (err) {
-                console.error('Falha ao copiar texto: ', err);
-                // Opcional: fornecer feedback de erro ao usuário
-                button.textContent = 'Falhou!';
-                 setTimeout(() => {
-                    button.textContent = 'Copiar';
-                }, 2000);
-            }
+                setTimeout(() => { button.textContent = 'Copiar'; }, 2000);
+            }).catch(err => console.error('Falha ao copiar: ', err));
         });
     });
 }
 
 /**
- * Configura o IntersectionObserver para destacar o link de navegação ativo
- * com base na seção visível na tela.
+ * Configura o IntersectionObserver para destacar o link de navegação ativo.
  */
 function setupNavigationObserver() {
     const sections = document.querySelectorAll('.module-section');
     const navLinks = document.querySelectorAll('.nav-link');
+    if (!sections.length || !navLinks.length) return;
 
-    if (sections.length === 0 || navLinks.length === 0) return;
-
-    const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const id = entry.target.id;
@@ -98,9 +85,7 @@ function setupNavigationObserver() {
                 });
             }
         });
-    }, { rootMargin: '-30% 0px -70% 0px' }); // Ajusta a área de detecção
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
+    }, { rootMargin: '-40% 0px -60% 0px' });
+    
+    sections.forEach(section => observer.observe(section));
 }
