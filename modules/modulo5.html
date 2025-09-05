@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+    <script src="../js/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-latex.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
+
+
+</head>
+
+<body class="bg-stone-50 text-stone-800">
+    <div class="flex">
+        <!-- Sidebar -->
+        <nav id="sidebar"
+            class="fixed top-0 left-0 h-screen w-64 bg-stone-800 text-stone-200 p-5 hidden lg:block overflow-y-auto">
+            <h2 class="text-xl font-bold mb-6 text-teal-300">Guia de LaTeX</h2>
+            <ul class="space-y-2">
+                <li><a href="../index.html" class="block py-2 px-4 rounded hover:bg-stone-700">Início</a></li>
+                <li><a href="filosofia.html" class="block py-2 px-4 rounded bg-stone-700">Filosofia</a></li>
+                <li><a href="modulo1.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 1: O Essencial</a>
+                </li>
+                <li><a href="modulo2.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 2: Estrutura</a>
+                </li>
+                <li><a href="modulo3.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 3: Matemática</a>
+                </li>
+                <li><a href="modulo4.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 4: Flutuantes</a>
+                </li>
+                <li><a href="modulo5.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 5: Bibliografia</a>
+                </li>
+                <li><a href="modulo6.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 6: Padrão ABNT</a>
+                </li>
+                <li><a href="modulo7.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 7: Customização</a>
+                </li>
+                <li><a href="modulo8.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 8: Projeto
+                        Final</a>
+                </li>
+                <!-- ...continua... tan dan dan dan dan dandarudandandandan -->
+            </ul>
+        </nav>
+
+        <main class="w-full lg:ml-64 p-4 sm:p-6 md:p-10">
+            <section id="modulo5" class="module-section">
+                    <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
+                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 5: Gerenciamento de Bibliografia com BibTeX</h2>
+                        <p class="text-stone-700 mb-6">Gerenciar dezenas ou centenas de referências manualmente é uma tarefa propensa a erros e extremamente tediosa. O BibTeX é o sistema clássico do LaTeX para automatizar completamente a criação de citações e da lista de referências, garantindo consistência e formatação correta com o mínimo de esforço.</p>
+                        
+                        <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">O Fluxo de Trabalho com BibTeX</h3>
+                        <p class="text-stone-700 mb-4">O processo se baseia em separar os dados da apresentação:</p>
+                        <ol class="list-decimal list-inside space-y-2 text-stone-700">
+                            <li><strong>Crie um banco de dados (arquivo <code>.bib</code>):</strong> Você cria um arquivo de texto simples (ex: <code>referencias.bib</code>) onde cada entrada é uma fonte (livro, artigo, site) formatada de uma maneira específica.</li>
+                            <li><strong>Cite no seu texto (arquivo <code>.tex</code>):</strong> No seu documento principal, você usa o comando <code>\cite{chave_da_entrada}</code> para citar uma fonte. A "chave" é um apelido único que você deu para a entrada no arquivo <code>.bib</code>.</li>
+                            <li><strong>Deixe o LaTeX fazer o trabalho:</strong> Você informa ao LaTeX qual estilo de citação usar (ex: ABNT, APA, IEEE) e onde inserir a lista de referências. O LaTeX irá automaticamente buscar as informações no arquivo <code>.bib</code> apenas das fontes que você citou, formatá-las no estilo correto e gerar a lista completa.</li>
+                        </ol>
+
+                        <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Anatomia de um Arquivo <code>.bib</code></h3>
+                        <p class="text-stone-700 mb-4">No Overleaf, clique em "New File" e nomeie-o como <code>referencias.bib</code>. Cada entrada começa com <code>@tipodocumento</code> (ex: <code>@book</code>, <code>@article</code>, <code>@misc</code> para sites), seguido por uma chave de citação única (ex: <code>knuth1984</code>) e os campos de informação.</p>
+
+                        <div>
+                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código (arquivo <code>referencias.bib</code>)</h4>
+                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                                <button class="copy-button">Copiar</button>
+                                <pre><code class="language-bibtex">@book{knuth1984,
+  author    = {Donald E. Knuth},
+  title     = {The TeXbook},
+  publisher = {Addison-Wesley},
+  year      = {1984},
+  address   = {Reading, MA}
+}
+
+@article{einstein1905,
+  author  = {Albert Einstein},
+  title   = {Zur Elektrodynamik bewegter Körper},
+  journal = {Annalen der Physik},
+  volume  = {322},
+  number  = {10},
+  pages   = {891--921},
+  year    = {1905}
+}</code></pre>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Usando a Bibliografia no Documento Principal</h3>
+                        <p class="text-stone-700 mb-4">No seu arquivo <code>.tex</code>, você precisa de três coisas: o comando <code>\cite{}</code> para fazer a citação, <code>\bibliographystyle{}</code> para definir o estilo e <code>\bibliography{}</code> para dizer qual arquivo <code>.bib</code> usar e onde imprimir a lista de referências.</p>
+
+                        <div>
+                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código (arquivo <code>main.tex</code>)</h4>
+                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                                <button class="copy-button">Copiar</button>
+                                <pre><code class="language-latex">\documentclass{article}
+\usepackage[brazil]{babel}
+% ...
+\begin{document}
+A tipografia digital foi revolucionada por Knuth~\cite{knuth1984}.
+As bases da relatividade foram lançadas por Einstein~\cite{einstein1905}.
+
+\bibliographystyle{plain} % Estilo de citação numérico simples
+\bibliography{referencias} % Nome do arquivo .bib (sem a extensão)
+\end{document}
+</code></pre>
+                            </div>
+                            <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
+                            <div class="latex-preview p-6 border rounded-md bg-stone-100">
+                                <p>A tipografia digital foi revolucionada por Knuth [2]. As bases da relatividade foram lançadas por Einstein [1].</p>
+                                <h2 class="text-2xl font-bold mt-6 mb-4">Referências</h2>
+                                <p class="mb-2">[1] Albert Einstein. Zur Elektrodynamik bewegter Körper. <em>Annalen der Physik</em>, 322(10):891–921, 1905.</p>
+                                <p>[2] Donald E. Knuth. <em>The TeXbook</em>. Addison-Wesley, Reading, MA, 1984.</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 exercise-block">
+                            <h3 class="text-2xl font-semibold text-teal-800 mb-3">Proposta de Exercícios</h3>
+                            <ol class="list-decimal list-inside space-y-2 text-stone-700">
+                                <li>Crie um novo arquivo <code>bibliografia.bib</code> no seu projeto.</li>
+                                <li>Procure no Google Scholar por um artigo do seu interesse e clique em "Citar" (ou aspas). Selecione a opção "BibTeX" e copie o código para o seu arquivo.</li>
+                                <li>Adicione uma entrada do tipo <code>@book</code> para um livro que você goste.</li>
+                                <li>No seu arquivo <code>.tex</code> principal, escreva dois parágrafos, cada um citando uma das fontes que você adicionou.</li>
+                                <li>Adicione os comandos <code>\bibliographystyle{unsrt}</code> (que ordena as referências pela ordem de citação) e <code>\bibliography{bibliografia}</code> no final do seu documento e recompile para ver a lista de referências ser gerada.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+        </main>
+    </div>
+
+</body>
+
+</html>

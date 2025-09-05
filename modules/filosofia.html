@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filosofia do LaTeX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="bg-stone-50 text-stone-800">
+    <div class="flex">
+            <!-- Sidebar -->
+    <nav id="sidebar" class="fixed top-0 left-0 h-screen w-64 bg-stone-800 text-stone-200 p-5 hidden lg:block overflow-y-auto">
+      <h2 class="text-xl font-bold mb-6 text-teal-300">Guia de LaTeX</h2>
+      <ul class="space-y-2">
+                <li><a href="../index.html" class="block py-2 px-4 rounded hover:bg-stone-700">Início</a></li>
+                <li><a href="filosofia.html" class="block py-2 px-4 rounded bg-stone-700">Filosofia</a></li>
+                <li><a href="modulo1.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 1: O Essencial</a>
+                </li>
+                <li><a href="modulo2.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 2: Estrutura</a>
+                </li>
+                <li><a href="modulo3.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 3: Matemática</a>
+                </li>
+                <li><a href="modulo4.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 4: Flutuantes</a>
+                </li>
+                <li><a href="modulo5.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 5: Bibliografia</a>
+                </li>
+                <li><a href="modulo6.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 6: Padrão ABNT</a>
+                </li>
+                <li><a href="modulo7.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 7: Customização</a>
+                </li>
+                <li><a href="modulo8.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 8: Projeto Final</a>
+                </li>
+        <!-- ...continue -->
+      </ul>
+    </nav>
+        
+        <main class="w-full lg:ml-64 p-4 sm:p-6 md:p-10">
+            <section id="filosofia" class="module-section">
+                    <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
+                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">A Filosofia
+                            do LaTeX</h2>
+                        <p class="text-stone-700 mb-4">Bem-vindo ao mundo do LaTeX! Antes de mergulharmos nos comandos,
+                            é fundamental entender a filosofia que o torna tão poderoso e diferente de processadores de
+                            texto como o Word ou Google Docs. Essa compreensão inicial tornará todo o seu aprendizado
+                            mais intuitivo.</p>
+                        <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">O Paradigma da Separação: Conteúdo
+                            vs. Apresentação</h3>
+                        <p class="text-stone-700 mb-4">A ideia central do LaTeX é: <strong class="text-stone-900">você
+                                se concentra no que está escrevendo (o conteúdo) e na sua estrutura lógica, enquanto o
+                                LaTeX cuida de como ele será apresentado (a aparência)</strong>. Em vez de selecionar um
+                            texto e clicar em um botão "Negrito", você informa ao LaTeX que aquele trecho de texto tem
+                            uma "ênfase". A classe do documento ou o estilo que você estiver usando decidirá se essa
+                            "ênfase" será em negrito, itálico ou outro formato. Isso garante uma consistência visual
+                            impecável em todo o documento.</p>
+                        <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">Vantagens Principais</h3>
+                        <ul class="list-disc list-inside space-y-3 text-stone-700">
+                            <li><strong class="text-stone-900">Qualidade Tipográfica Profissional:</strong> O LaTeX
+                                utiliza algoritmos sofisticados para justificar parágrafos, hifenizar palavras e
+                                gerenciar o espaçamento, resultando em um acabamento visual de alta qualidade, padrão em
+                                publicações científicas e editoriais.</li>
+                            <li><strong class="text-stone-900">Excelência em Matemática:</strong> A diagramação de
+                                fórmulas matemáticas complexas é inigualável, sendo o padrão ouro em artigos de exatas,
+                                engenharias e economia.</li>
+                            <li><strong class="text-stone-900">Automação de Tarefas:</strong> A geração de sumários,
+                                listas de figuras, referências cruzadas e bibliografias é totalmente automática,
+                                eliminando erros manuais e economizando horas de trabalho.</li>
+                            <li><strong class="text-stone-900">Estabilidade e Portabilidade:</strong> Arquivos
+                                <code>.tex</code> são texto puro, o que significa que são leves, não se corrompem e
+                                podem ser abertos em qualquer sistema operacional, hoje ou daqui a 50 anos.</li>
+                        </ul>
+                        <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">O que é o Overleaf?</h3>
+                        <p class="text-stone-700">O Overleaf é uma plataforma online que elimina a necessidade de
+                            instalar o LaTeX no seu computador. Ele oferece um editor de código, um visualizador de PDF
+                            em tempo real e ferramentas de colaboração, tudo no seu navegador. É o ambiente perfeito
+                            para iniciantes.</p>
+                    </div>
+                </section>
+        </main>
+
+    </div>
+    
+</body>
+
+</html>

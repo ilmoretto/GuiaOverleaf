@@ -1,36 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia Interativo de LaTeX e Overleaf</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body class="bg-stone-50 text-stone-800">
 
     <div class="flex">
-        <nav id="sidebar" class="fixed top-0 left-0 h-screen w-64 bg-stone-800 text-stone-200 p-5 hidden lg:block overflow-y-auto">
+        <nav id="sidebar"
+            class="fixed top-0 left-0 h-screen w-64 bg-stone-800 text-stone-200 p-5 hidden lg:block overflow-y-auto">
             <h2 class="text-xl font-bold mb-6 text-teal-300">Guia de LaTeX</h2>
+
+            <!-- menu lateral -->
             <ul class="space-y-2">
-                <li><a href="#inicio" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Início</a></li>
-                <li><a href="#filosofia" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Filosofia</a></li>
-                <li><a href="#modulo1" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 1: O Essencial</a></li>
-                <li><a href="#modulo2" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 2: Estrutura</a></li>
-                <li><a href="#modulo3" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 3: Matemática</a></li>
-                <li><a href="#modulo4" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 4: Flutuantes</a></li>
-                <li><a href="#modulo5" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 5: Bibliografia</a></li>
-                <li><a href="#modulo6" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 6: Padrão ABNT</a></li>
-                <li><a href="#modulo7" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 7: Customização</a></li>
-                <li><a href="#modulo8" class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo 8: Projeto Final</a></li>
+                <li><a href="#inicio"
+                        class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Início</a>
+                </li>
+                <li><a href="modules/filosofia.html"
+                        class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Filosofia</a>
+                </li>
+                <li><a href="modules/modulo1.html"
+                        class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo
+                        1: O Essencial</a></li>
+                <li><a href="modules/modulo2.html"
+                        class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo
+                        2: Estrutura</a></li>
+                <li><a href="modules/modulo3.html"
+                        class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo
+                        3: Matemática</a></li>
+                <li><a href="modules/modulo4.html"
+                        class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo
+                        4: Flutuantes</a></li>
+                <li><a href="modules/modulo5.html"
+                        class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo
+                        5: Bibliografia</a></li>
+                <li><a href="modules/modulo6.html"
+                        class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo
+                        6: Padrão ABNT</a></li>
+                <li><a href="modules/modulo7.html"
+                        class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo
+                        7: Customização</a></li>
+                <li><a href="modules/modulo8.html"
+                        class="nav-link block py-2 px-4 rounded transition-colors duration-200 hover:bg-stone-700">Módulo
+                        8: Projeto Final</a></li>
             </ul>
         </nav>
 
@@ -38,384 +65,16 @@
             <header id="inicio" class="module-section mb-12">
                 <div class="bg-white p-8 rounded-xl shadow-lg border border-stone-200">
                     <h1 class="text-4xl font-bold text-teal-700 mb-4">Guia Interativo de LaTeX com Overleaf</h1>
-                    <p class="text-lg text-stone-600 mb-6">Esta aplicação transforma o guia de estudos de LaTeX em uma experiência de aprendizado interativa. Navegue pelos módulos, compare o código-fonte com o resultado visual em tempo real e copie os exemplos para acelerar seu domínio sobre a ferramenta.</p>
+                    <p class="text-lg text-stone-600 mb-6">Esta aplicação transforma o guia de estudos de LaTeX em uma
+                        experiência de aprendizado interativa. Navegue pelos módulos, compare o código-fonte com o
+                        resultado visual em tempo real e copie os exemplos para acelerar seu domínio sobre a ferramenta.
+                    </p>
                     <div class="chart-container relative h-80 w-full max-w-3xl mx-auto">
                         <canvas id="topicsChart"></canvas>
                     </div>
-                     <p class="text-sm text-center text-stone-500 mt-2">Distribuição de Foco do Guia de Estudos</p>
+                    <p class="text-sm text-center text-stone-500 mt-2">Distribuição de Foco do Guia de Estudos</p>
                 </div>
             </header>
-
-            <div id="module-content" class="space-y-12">
-                
-                <section id="filosofia" class="module-section">
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
-                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">A Filosofia do LaTeX</h2>
-                        <p class="text-stone-700 mb-4">Bem-vindo ao mundo do LaTeX! Antes de mergulharmos nos comandos, é fundamental entender a filosofia que o torna tão poderoso e diferente de processadores de texto como o Word ou Google Docs. Essa compreensão inicial tornará todo o seu aprendizado mais intuitivo.</p>
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">O Paradigma da Separação: Conteúdo vs. Apresentação</h3>
-                        <p class="text-stone-700 mb-4">A ideia central do LaTeX é: <strong class="text-stone-900">você se concentra no que está escrevendo (o conteúdo) e na sua estrutura lógica, enquanto o LaTeX cuida de como ele será apresentado (a aparência)</strong>. Em vez de selecionar um texto e clicar em um botão "Negrito", você informa ao LaTeX que aquele trecho de texto tem uma "ênfase". A classe do documento ou o estilo que você estiver usando decidirá se essa "ênfase" será em negrito, itálico ou outro formato. Isso garante uma consistência visual impecável em todo o documento.</p>
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">Vantagens Principais</h3>
-                        <ul class="list-disc list-inside space-y-3 text-stone-700">
-                            <li><strong class="text-stone-900">Qualidade Tipográfica Profissional:</strong> O LaTeX utiliza algoritmos sofisticados para justificar parágrafos, hifenizar palavras e gerenciar o espaçamento, resultando em um acabamento visual de alta qualidade, padrão em publicações científicas e editoriais.</li>
-                            <li><strong class="text-stone-900">Excelência em Matemática:</strong> A diagramação de fórmulas matemáticas complexas é inigualável, sendo o padrão ouro em artigos de exatas, engenharias e economia.</li>
-                            <li><strong class="text-stone-900">Automação de Tarefas:</strong> A geração de sumários, listas de figuras, referências cruzadas e bibliografias é totalmente automática, eliminando erros manuais e economizando horas de trabalho.</li>
-                            <li><strong class="text-stone-900">Estabilidade e Portabilidade:</strong> Arquivos <code>.tex</code> são texto puro, o que significa que são leves, não se corrompem e podem ser abertos em qualquer sistema operacional, hoje ou daqui a 50 anos.</li>
-                        </ul>
-                         <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">O que é o Overleaf?</h3>
-                         <p class="text-stone-700">O Overleaf é uma plataforma online que elimina a necessidade de instalar o LaTeX no seu computador. Ele oferece um editor de código, um visualizador de PDF em tempo real e ferramentas de colaboração, tudo no seu navegador. É o ambiente perfeito para iniciantes.</p>
-                    </div>
-                </section>
-
-                <section id="modulo1" class="module-section">
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
-                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 1: O Documento Essencial</h2>
-                        <p class="text-stone-700 mb-6">Todo documento em LaTeX possui uma estrutura mínima obrigatória. Vamos dissecar o código de um "Olá, Mundo!" para entender as partes fundamentais: o preâmbulo e o corpo do documento.</p>
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">Anatomia de um Arquivo <code>.tex</code></h3>
-                        <p class="text-stone-700 mb-4">O código abaixo é o mínimo necessário para gerar um documento válido. Copie-o, cole em um novo projeto no Overleaf e clique em "Recompile" para ver a mágica acontecer.</p>
-                        <div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
-                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
-                                <button class="copy-button" aria-label="Copiar código">Copiar</button>
-                                <pre><code class="language-latex">\documentclass[12pt]{article}
-
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[brazil]{babel}
-
-\title{Meu Primeiro Documento}
-\author{Seu Nome}
-\date{\today}
-
-\begin{document}
-    \maketitle
-    
-    Olá, mundo LaTeX! Este é meu primeiro parágrafo.
-    
-    Parágrafos são separados por uma linha em branco no código.
-\end{document}</code></pre>
-                            </div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
-                            <div class="latex-preview p-6 border rounded-md bg-stone-100">
-                                <div class="text-center">
-                                    <h1 class="text-3xl font-bold mb-2">Meu Primeiro Documento</h1>
-                                    <p class="text-xl mb-1">Seu Nome</p>
-                                    <p class="text-lg mb-8">4 de Setembro de 2025</p>
-                                </div>
-                                <p>Olá, mundo LaTeX! Este é meu primeiro parágrafo.</p>
-                                <p class="mt-4">Parágrafos são separados por uma linha em branco no código.</p>
-                            </div>
-                        </div>
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Desvendando o Código</h3>
-                        <ul class="space-y-4 text-stone-700">
-                            <li><code>\documentclass[12pt]{article}</code>: A primeira linha de todo documento. Define o tipo (classe) do documento. <code>article</code> é ideal para artigos, relatórios curtos. Outras classes comuns são <code>report</code>, <code>book</code> e <code>beamer</code> (para apresentações). As opções entre colchetes, como <code>[12pt]</code>, ajustam configurações globais, neste caso, o tamanho da fonte.</li>
-                            <li><strong>O Preâmbulo:</strong> É tudo que vem entre o <code>\documentclass</code> e o <code>\begin{document}</code>. Aqui, você carrega pacotes (funcionalidades extras) e define configurações globais.
-                                <ul class="list-disc list-inside ml-6 mt-2">
-                                    <li><code>\usepackage{...}</code>: Carrega um pacote. <code>inputenc</code> com a opção <code>utf8</code> permite que você use acentos diretamente no código. <code>babel</code> com a opção <code>brazil</code> ensina ao LaTeX as regras de hifenização e os termos em português (como "Sumário" em vez de "Contents").</li>
-                                    <li><code>\title{...}</code>, <code>\author{...}</code>, <code>\date{...}</code>: Comandos que armazenam informações para serem usadas posteriormente. <code>\today</code> é um comando especial que insere a data atual.</li>
-                                </ul>
-                            </li>
-                             <li><strong>O Corpo do Documento:</strong> É o conteúdo que vai entre <code>\begin{document}</code> e <code>\end{document}</code>.
-                                <ul class="list-disc list-inside ml-6 mt-2">
-                                    <li><code>\maketitle</code>: Comando que pega as informações de título, autor e data definidas no preâmbulo e as formata no topo do documento.</li>
-                                    <li><strong>Texto e Parágrafos:</strong> O texto que você escreve aparece diretamente no PDF. Para iniciar um novo parágrafo, basta deixar uma linha em branco no seu código-fonte.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="mt-8 exercise-block">
-                            <h3 class="text-2xl font-semibold text-teal-800 mb-3">Proposta de Exercícios</h3>
-                            <ol class="list-decimal list-inside space-y-2 text-stone-700">
-                                <li>Crie um novo projeto no Overleaf chamado "Meus Primeiros Passos".</li>
-                                <li>Altere o autor para o seu nome completo e o título para "Relatório de Aprendizagem".</li>
-                                <li>Troque <code>\today</code> por uma data específica, como <code>\date{Dezembro de 2025}</code>.</li>
-                                <li>Escreva três parágrafos curtos sobre o que você espera aprender com o LaTeX. Lembre-se de separar cada parágrafo com uma linha em branco no código.</li>
-                                <li>Compile o documento e veja o resultado no PDF.</li>
-                            </ol>
-                        </div>
-                    </div>
-                </section>
-                
-                <section id="modulo2" class="module-section">
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
-                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 2: Formatando Conteúdo e Estrutura</h2>
-                        <p class="text-stone-700 mb-6">Agora que você sabe criar um documento básico, vamos aprender a organizar o conteúdo de forma hierárquica e a aplicar formatações essenciais como negrito, itálico e listas.</p>
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">Hierarquia com Seções</h3>
-                        <p class="text-stone-700 mb-4">Em vez de formatar títulos manualmente, você informa ao LaTeX a estrutura do seu documento. Ele cuidará da numeração, do tamanho da fonte e da inserção no sumário (que veremos mais à frente).</p>
-                        <div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
-                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
-                                <button class="copy-button" aria-label="Copiar código">Copiar</button>
-                                <pre><code class="language-latex">\section{Introdução}
-Este é o primeiro capítulo do nosso documento.
-
-\subsection{Motivação}
-Aqui explicamos o porquê deste estudo.
-
-\subsubsection{Objetivos Específicos}
-Um nível de detalhe ainda maior.
-
-\section{Desenvolvimento}
-Iniciamos um novo capítulo, e a numeração continua automaticamente.</code></pre>
-                            </div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
-                            <div class="latex-preview p-6 border rounded-md bg-stone-100">
-                                <h2 class="text-2xl font-bold mb-2">1 Introdução</h2>
-                                <p>Este é o primeiro capítulo do nosso documento.</p>
-                                <h3 class="text-xl font-bold mt-4 mb-2">1.1 Motivação</h3>
-                                <p>Aqui explicamos o porquê deste estudo.</p>
-                                <h4 class="text-lg font-bold mt-3 mb-2">1.1.1 Objetivos Específicos</h4>
-                                <p>Um nível de detalhe ainda maior.</p>
-                                <h2 class="text-2xl font-bold mt-6 mb-2">2 Desenvolvimento</h2>
-                                <p>Iniciamos um novo capítulo, e a numeração continua automaticamente.</p>
-                            </div>
-                        </div>
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Ênfase e Estilos de Fonte</h3>
-                        <p class="text-stone-700 mb-4">A forma correta de destacar um texto é usando o comando <code>\emph{...}</code> (ênfase). Ele geralmente resulta em itálico, mas tem um comportamento inteligente: se o texto ao redor já estiver em itálico, a ênfase será em texto reto, para criar contraste. Use <code>\textbf{...}</code> para negrito e <code>\textit{...}</code> para itálico quando a razão for puramente estilística.</p>
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Criando Listas</h3>
-                        <p class="text-stone-700 mb-4">Listas são criadas com "ambientes". Um ambiente começa com <code>\begin{nome_do_ambiente}</code> e termina com <code>\end{nome_do_ambiente}</code>. Os itens da lista são marcados com <code>\item</code>.</p>
-                        <div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
-                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
-                                <button class="copy-button" aria-label="Copiar código">Copiar</button>
-                                <pre><code class="language-latex">\subsection{Tipos de Listas}
-Uma lista de marcadores:
-\begin{itemize}
-    \item Primeiro ponto.
-    \item Segundo ponto.
-\end{itemize}
-
-Uma lista numerada:
-\begin{enumerate}
-    \item Primeiro passo.
-    \item Segundo passo.
-    \item Terceiro passo.
-\end{enumerate}</code></pre>
-                            </div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
-                            <div class="latex-preview p-6 border rounded-md bg-stone-100">
-                                <h3 class="text-xl font-bold mt-4 mb-2">2.1 Tipos de Listas</h3>
-                                <p>Uma lista de marcadores:</p>
-                                <ul class="list-disc list-inside my-2">
-                                    <li>Primeiro ponto.</li>
-                                    <li>Segundo ponto.</li>
-                                </ul>
-                                <p>Uma lista numerada:</p>
-                                <ol class="list-decimal list-inside my-2">
-                                    <li>Primeiro passo.</li>
-                                    <li>Segundo passo.</li>
-                                    <li>Terceiro passo.</li>
-                                </ol>
-                            </div>
-                        </div>
-                        <div class="mt-8 exercise-block">
-                            <h3 class="text-2xl font-semibold text-teal-800 mb-3">Proposta de Exercícios</h3>
-                            <ol class="list-decimal list-inside space-y-2 text-stone-700">
-                                <li>No seu projeto, crie uma seção chamada "Resumo do Módulo 2".</li>
-                                <li>Dentro dela, crie duas subseções: "Principais Comandos" e "Dificuldades Encontradas".</li>
-                                <li>Na primeira subseção, use uma lista <code>itemize</code> para listar os comandos que você aprendeu neste módulo (<code>\section</code>, <code>\textbf</code>, etc.).</li>
-                                <li>Na segunda subseção, use uma lista <code>enumerate</code> para descrever, em ordem, os passos que você daria para resolver um erro de compilação.</li>
-                                <li>Use <code>\textbf</code> para destacar o nome de cada comando na sua lista e <code>\emph</code> em uma frase na sua segunda subseção.</li>
-                            </ol>
-                        </div>
-                    </div>
-                </section>
-                
-                <section id="modulo3" class="module-section">
-                   <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
-                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 3: O Poder da Matemática</h2>
-                        <p class="text-stone-700 mb-6">Este é o superpoder do LaTeX. A capacidade de escrever expressões matemáticas, de uma simples variável a equações complexas, de forma elegante e padronizada, é inigualável. Para isso, o pacote <code>amsmath</code> é seu maior aliado.</p>
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">Modos Matemáticos: Em Linha e de Destaque</h3>
-                        <p class="text-stone-700 mb-4">Existem duas formas de inserir matemática:</p>
-                        <ul class="list-disc list-inside space-y-2 text-stone-700">
-                            <li><strong>Em linha (inline):</strong> Para expressões curtas no meio de um parágrafo. Use um par de cifrões: <code>$ ... $</code>.</li>
-                            <li><strong>De destaque (display):</strong> Para equações importantes que devem ocupar sua própria linha e ser centralizadas. Use colchetes e contrabarras: <code>\[ ... \]</code>.</li>
-                        </ul>
-                        <div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
-                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
-                                <button class="copy-button" aria-label="Copiar código">Copiar</button>
-                                <pre><code class="language-latex">A famosa equação de Einstein, $E=mc^2$, relaciona energia e massa.
-Para resolver uma equação de segundo grau, usamos a fórmula de Bhaskara:
-\[ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} \]
-Note como os comandos \verb|\frac{}{}| para frações e \verb|\sqrt{}| para raízes são usados.</code></pre>
-                            </div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
-                            <div class="latex-preview p-6 border rounded-md bg-stone-100 text-lg">
-                                <p>A famosa equação de Einstein, $E=mc^2$, relaciona energia e massa. Para resolver uma equação de segundo grau, usamos a fórmula de Bhaskara:</p>
-                                <div class="text-center my-2">
-                                     \[ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} \] 
-                                </div>
-                                <p>Note como os comandos <code>\frac{}{}</code> para frações e <code>\sqrt{}</code> para raízes são usados.</p>
-                            </div>
-                        </div>
-                         <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Equações Numeradas e Alinhadas com <code>amsmath</code></h3>
-                        <p class="text-stone-700 mb-4">Para trabalhos acadêmicos, você precisará numerar e referenciar suas equações. O ambiente <code>equation</code> faz isso automaticamente. Para sistemas de equações ou derivações passo a passo, o ambiente <code>align</code> permite alinhar múltiplas linhas por um ponto em comum (geralmente o sinal de igual, marcado com <code>&</code>).</p>
-                        <div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
-                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
-                                <button class="copy-button" aria-label="Copiar código">Copiar</button>
-                                <pre><code class="language-latex">\usepackage{amsmath}
-% ...
-\begin{equation}
-    \oint_C \vec{B} \cdot d\vec{l} = \mu_0 I_{enc}
-    \label{eq:ampere}
-\end{equation}
-A Equação~\ref{eq:ampere} é a Lei de Ampère.
-
-Uma derivação simples:
-\begin{align}
-    f(x) &= (x+a)^2 \\
-         &= x^2 + 2ax + a^2
-\end{align}</code></pre>
-                            </div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
-                            <div class="latex-preview p-6 border rounded-md bg-stone-100 text-lg">
-                                <div class="flex justify-between items-center my-4">
-                                    <span> \(\oint_C \vec{B} \cdot d\vec{l} = \mu_0 I_{enc}\) </span>
-                                    <span>(1)</span>
-                                </div>
-                                <p>A Equação (1) é a Lei de Ampère.</p>
-                                <p>Uma derivação simples:</p>
-                                <div class="my-2 text-center">
-                                     \begin{align} f(x) &= (x+a)^2 \\ &= x^2 + 2ax + a^2 \end{align} 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-8 exercise-block">
-                            <h3 class="text-2xl font-semibold text-teal-800 mb-3">Proposta de Exercícios</h3>
-                            <ol class="list-decimal list-inside space-y-2 text-stone-700">
-                                <li>Adicione <code>\usepackage{amsmath}</code> ao preâmbulo do seu documento.</li>
-                                <li>Escreva um parágrafo explicando o Teorema de Pitágoras e insira a fórmula $a^2 + b^2 = c^2$ no modo "em linha".</li>
-                                <li>Use o ambiente <code>equation</code> para escrever a fórmula da área de um círculo ($A = \pi r^2$). Dê um <code>\label</code> a ela e tente referenciá-la em um parágrafo.</li>
-                                <li>Pesquise como escrever letras gregas (ex: <code>\alpha</code>, <code>\beta</code>, <code>\gamma</code>) e use o ambiente <code>align</code> para mostrar a identidade trigonométrica $\sin^2(\theta) + \cos^2(\theta) = 1$, colocando o sinal de igual em uma nova linha alinhada.</li>
-                            </ol>
-                        </div>
-                    </div>
-                </section>
-                
-                <section id="modulo4" class="module-section">
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
-                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 4: Elementos Flutuantes: Figuras e Tabelas</h2>
-                        <p class="text-stone-700 mb-6">Documentos técnicos e acadêmicos raramente contêm apenas texto. Aprender a incorporar figuras e tabelas é um passo essencial. No LaTeX, esses elementos são tratados como "flutuantes", pois o LaTeX pode movê-los para um local ótimo na página para evitar quebras de página ruins e manter um bom layout.</p>
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">Inserindo Figuras</h3>
-                        <p class="text-stone-700 mb-4">Para inserir imagens, você precisa do pacote <code>graphicx</code>. O processo envolve três comandos principais dentro do ambiente <code>figure</code>: <code>\includegraphics</code> para incluir o arquivo da imagem, <code>\caption</code> para a legenda e <code>\label</code> para a referência cruzada.</p>
-                        <div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
-                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
-                                <button class="copy-button" aria-label="Copiar código">Copiar</button>
-                                <pre><code class="language-latex">\usepackage{graphicx}
-% ...
-Como vemos na Figura~\ref{fig:logo}, o logotipo é simples.
-\begin{figure}[ht]
-    \centering
-    % Use um placeholder se não tiver a imagem
-    \includegraphics[width=0.5\textwidth]{placeholder.png} 
-    \caption{Logotipo da Empresa.}
-    \label{fig:logo}
-\end{figure}</code></pre>
-                            </div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
-                            <div class="latex-preview p-6 border rounded-md bg-stone-100">
-                                <p>Como vemos na Figura 1, o logotipo é simples.</p>
-                                <div class="my-4 p-4 border w-full text-center">
-                                    <div class="w-1/2 mx-auto bg-gray-300 flex items-center justify-center h-24">
-                                        <span class="text-gray-600">[Imagem de placeholder.png]</span>
-                                    </div>
-                                    <p class="mt-2 font-semibold">Figura 1: Logotipo da Empresa.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="text-stone-700 mt-4"><strong>Nota:</strong> Para o código funcionar, você precisa fazer o upload da imagem (ex: <code>placeholder.png</code>) para o seu projeto no Overleaf. A opção <code>[ht]</code> é uma sugestão para o LaTeX: tente posicionar a figura "aqui" (here) ou no "topo" (top) da página.</p>
-                         <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Construindo Tabelas Profissionais</h3>
-                        <p class="text-stone-700 mb-4">Tabelas são criadas com o ambiente <code>tabular</code>. Para um visual mais limpo e profissional, é altamente recomendável usar o pacote <code>booktabs</code>, que fornece linhas horizontais com espaçamentos melhores (<code>\toprule</code>, <code>\midrule</code>, <code>\bottomrule</code>) e desencoraja o uso de linhas verticais.</p>
-                        <div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
-                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
-                                <button class="copy-button" aria-label="Copiar código">Copiar</button>
-                                <pre><code class="language-latex">\usepackage{booktabs}
-%...
-A Tabela~\ref{tab:dados} mostra os resultados.
-\begin{table}[ht]
-    \centering
-    \caption{Resultados da Simulação.}
-    \label{tab:dados}
-    \begin{tabular}{l c r}
-        \toprule
-        Parâmetro & Símbolo & Valor Médio \\
-        \midrule
-        Velocidade & $v$ & 25.4 m/s \\
-        Aceleração & $a$ & 9.8 m/s$^2$ \\
-        \bottomrule
-    \end{tabular}
-\end{table}</code></pre>
-                            </div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
-                            <div class="latex-preview p-6 border rounded-md bg-stone-100">
-                                <p>A Tabela 1 mostra os resultados.</p>
-                                <div class="w-full my-4">
-                                    <p class="text-center font-semibold mb-2">Tabela 1: Resultados da Simulação.</p>
-                                    <table class="w-full text-left mx-auto max-w-sm">
-                                        <thead class="border-b-2 border-black">
-                                            <tr>
-                                                <th class="pb-2 pr-4">Parâmetro</th>
-                                                <th class="pb-2 pr-4 text-center">Símbolo</th>
-                                                <th class="pb-2 text-right">Valor Médio</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="border-b-2 border-black">
-                                            <tr class="border-b border-gray-400">
-                                                <td class="py-2 pr-4">Velocidade</td>
-                                                <td class="py-2 pr-4 text-center">$v$</td>
-                                                <td class="py-2 text-right">25.4 m/s</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-2 pr-4">Aceleração</td>
-                                                <td class="py-2 pr-4 text-center">$a$</td>
-                                                <td class="py-2 text-right">9.8 m/s$^2$</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-8 exercise-block">
-                            <h3 class="text-2xl font-semibold text-teal-800 mb-3">Proposta de Exercícios</h3>
-                            <ol class="list-decimal list-inside space-y-2 text-stone-700">
-                                <li>Encontre uma imagem simples online (um gráfico, um diagrama) e faça o upload para o seu projeto Overleaf.</li>
-                                <li>Use o ambiente <code>figure</code> para inserir esta imagem no seu documento. Adicione uma legenda e um <code>\label</code>.</li>
-                                <li>Escreva um parágrafo que referencie a figura usando <code>\ref</code>.</li>
-                                <li>Crie uma tabela simples com 3 colunas (ex: "Produto", "Quantidade", "Preço") e 3 linhas de dados, usando as boas práticas do <code>booktabs</code>.</li>
-                                <li>Adicione uma legenda e um <code>\label</code> à sua tabela e referencie-a no texto.</li>
-                            </ol>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="modulo5" class="module-section">
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
-                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 5: Bibliografia</h2>
-                        <p class="text-stone-700">Conteúdo para este módulo será adicionado em breve.</p>
-                    </div>
-                </section>
-                 <section id="modulo6" class="module-section">
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
-                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 6: Padrão ABNT</h2>
-                        <p class="text-stone-700">Conteúdo para este módulo será adicionado em breve.</p>
-                    </div>
-                </section>
-                 <section id="modulo7" class="module-section">
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
-                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 7: Customização</h2>
-                        <p class="text-stone-700">Conteúdo para este módulo será adicionado em breve.</p>
-                    </div>
-                </section>
-                 <section id="modulo8" class="module-section">
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
-                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 8: Projeto Final</h2>
-                        <p class="text-stone-700">Conteúdo para este módulo será adicionado em breve.</p>
-                    </div>
-                </section>
-                
-            </div>
         </main>
     </div>
 
@@ -425,4 +84,5 @@ A Tabela~\ref{tab:dados} mostra os resultados.
 
     <script src="js/script.js" defer></script>
 </body>
+
 </html>

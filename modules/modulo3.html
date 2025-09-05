@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+     <script src="../js/script.js" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-latex.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
+
+</head>
+
+<body class="bg-stone-50 text-stone-800">
+    <div class="flex">
+        <!-- Sidebar -->
+        <nav id="sidebar"
+            class="fixed top-0 left-0 h-screen w-64 bg-stone-800 text-stone-200 p-5 hidden lg:block overflow-y-auto">
+            <h2 class="text-xl font-bold mb-6 text-teal-300">Guia de LaTeX</h2>
+            <ul class="space-y-2">
+                <li><a href="../index.html" class="block py-2 px-4 rounded hover:bg-stone-700">Início</a></li>
+                <li><a href="filosofia.html" class="block py-2 px-4 rounded bg-stone-700">Filosofia</a></li>
+                <li><a href="modulo1.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 1: O Essencial</a>
+                </li>
+                <li><a href="modulo2.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 2: Estrutura</a>
+                </li>
+                <li><a href="modulo3.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 3: Matemática</a>
+                </li>
+                <li><a href="modulo4.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 4: Flutuantes</a>
+                </li>
+                <li><a href="modulo5.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 5: Bibliografia</a>
+                </li>
+                <li><a href="modulo6.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 6: Padrão ABNT</a>
+                </li>
+                <li><a href="modulo7.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 7: Customização</a>
+                </li>
+                <li><a href="modulo8.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 8: Projeto Final</a>
+                </li>
+                <!-- ...continua... tan dan dan dan dan dandarudandandandan -->
+            </ul>
+        </nav>
+
+        <main class="w-full lg:ml-64 p-4 sm:p-6 md:p-10">
+            <section id="modulo3" class="module-section">
+                <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
+                    <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 3: O
+                        Poder da Matemática</h2>
+                    <p class="text-stone-700 mb-6">Este é o superpoder do LaTeX. A capacidade de escrever expressões
+                        matemáticas, de uma simples variável a equações complexas, de forma elegante e padronizada,
+                        é inigualável. Para isso, o pacote <code>amsmath</code> é seu maior aliado.</p>
+                    <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">Modos Matemáticos: Em Linha e de
+                        Destaque</h3>
+                    <p class="text-stone-700 mb-4">Existem duas formas de inserir matemática:</p>
+                    <ul class="list-disc list-inside space-y-2 text-stone-700">
+                        <li><strong>Em linha (inline):</strong> Para expressões curtas no meio de um parágrafo. Use
+                            um par de cifrões: <code>$ ... $</code>.</li>
+                        <li><strong>De destaque (display):</strong> Para equações importantes que devem ocupar sua
+                            própria linha e ser centralizadas. Use colchetes e contrabarras: <code>\[ ... \]</code>.
+                        </li>
+                    </ul>
+                    <div>
+                        <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
+                        <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                            <button class="copy-button" aria-label="Copiar código">Copiar</button>
+                            <pre><code class="language-latex">A famosa equação de Einstein, $E=mc^2$, relaciona energia e massa.
+Para resolver uma equação de segundo grau, usamos a fórmula de Bhaskara:
+\[ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} \]
+Note como os comandos \verb|\frac{}{}| para frações e \verb|\sqrt{}| para raízes são usados.</code></pre>
+                        </div>
+                        <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
+                        <div class="latex-preview p-6 border rounded-md bg-stone-100 text-lg">
+                            <p>A famosa equação de Einstein, $E=mc^2$, relaciona energia e massa. Para resolver uma
+                                equação de segundo grau, usamos a fórmula de Bhaskara:</p>
+                            <div class="text-center my-2">
+                                \[ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} \]
+                            </div>
+                            <p>Note como os comandos <code>\frac{}{}</code> para frações e <code>\sqrt{}</code> para
+                                raízes são usados.</p>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Equações Numeradas e Alinhadas com
+                        <code>amsmath</code>
+                    </h3>
+                    <p class="text-stone-700 mb-4">Para trabalhos acadêmicos, você precisará numerar e referenciar
+                        suas equações. O ambiente <code>equation</code> faz isso automaticamente. Para sistemas de
+                        equações ou derivações passo a passo, o ambiente <code>align</code> permite alinhar
+                        múltiplas linhas por um ponto em comum (geralmente o sinal de igual, marcado com
+                        <code>&</code>).
+                    </p>
+                    <div>
+                        <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
+                        <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                            <button class="copy-button" aria-label="Copiar código">Copiar</button>
+                            <pre><code class="language-latex">\usepackage{amsmath}
+% ...
+\begin{equation}
+    \oint_C \vec{B} \cdot d\vec{l} = \mu_0 I_{enc}
+    \label{eq:ampere}
+\end{equation}
+A Equação~\ref{eq:ampere} é a Lei de Ampère.
+
+Uma derivação simples:
+\begin{align}
+    f(x) &= (x+a)^2 \\
+         &= x^2 + 2ax + a^2
+\end{align}</code></pre>
+                        </div>
+                        <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
+                        <div class="latex-preview p-6 border rounded-md bg-stone-100 text-lg">
+                            <div class="flex justify-between items-center my-4">
+                                <span> \(\oint_C \vec{B} \cdot d\vec{l} = \mu_0 I_{enc}\) </span>
+                                <span>(1)</span>
+                            </div>
+                            <p>A Equação (1) é a Lei de Ampère.</p>
+                            <p>Uma derivação simples:</p>
+                            <div class="my-2 text-center">
+                                \begin{align} f(x) &= (x+a)^2 \\ &= x^2 + 2ax + a^2 \end{align}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 exercise-block">
+                        <h3 class="text-2xl font-semibold text-teal-800 mb-3">Proposta de Exercícios</h3>
+                        <ol class="list-decimal list-inside space-y-2 text-stone-700">
+                            <li>Adicione <code>\usepackage{amsmath}</code> ao preâmbulo do seu documento.</li>
+                            <li>Escreva um parágrafo explicando o Teorema de Pitágoras e insira a fórmula $a^2 + b^2
+                                = c^2$ no modo "em linha".</li>
+                            <li>Use o ambiente <code>equation</code> para escrever a fórmula da área de um círculo
+                                ($A = \pi r^2$). Dê um <code>\label</code> a ela e tente referenciá-la em um
+                                parágrafo.</li>
+                            <li>Pesquise como escrever letras gregas (ex: <code>\alpha</code>, <code>\beta</code>,
+                                <code>\gamma</code>) e use o ambiente <code>align</code> para mostrar a identidade
+                                trigonométrica $\sin^2(\theta) + \cos^2(\theta) = 1$, colocando o sinal de igual em
+                                uma nova linha alinhada.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
