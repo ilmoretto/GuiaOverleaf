@@ -55,12 +55,99 @@
         <main class="w-full lg:ml-64 p-4 sm:p-6 md:p-10">
             <section id="modulo6" class="module-section">
                     <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
-                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 6:
-                            Padrão ABNT</h2>
-                        <p class="text-stone-700">Conteúdo para este módulo será adicionado em breve.</p>
+                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 6: Padrões Acadêmicos Brasileiros com abnTeX2</h2>
+                        <p class="text-stone-700 mb-6">Escrever um Trabalho de Conclusão de Curso (TCC), uma dissertação ou uma tese no Brasil exige a adesão às normas da Associação Brasileira de Normas Técnicas (ABNT). Fazer isso manualmente é um pesadelo. Felizmente, a comunidade LaTeX brasileira desenvolveu o <code>abntex2</code>, uma suíte de pacotes que automatiza praticamente toda a formatação, permitindo que você foque no conteúdo.</p>
+                        
+                        <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">Estrutura de um Documento <code>abntex2</code></h3>
+                        <p class="text-stone-700 mb-4">O <code>abntex2</code> funciona como uma classe de documento, substituindo o <code>article</code> ou <code>book</code>. Ele provê comandos específicos para preencher as informações da capa, folha de rosto e outros elementos pré-textuais.</p>
+                        
+                        <div>
+                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX (Preâmbulo e Informações)</h4>
+                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                                <button class="copy-button">Copiar</button>
+                                <pre><code class="language-latex">\documentclass[12pt, a4paper, oneside]{abntex2}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[alf]{abntex2cite} % Estilo de citação alfabético (Autor-data)
+
+% --- Informações da Capa e Folha de Rosto ---
+\titulo{Análise de Algoritmos de Otimização}
+\autor{Seu Nome Completo}
+\instituicao{Universidade Federal de Exemplo}
+\curso{Ciência da Computação}
+\orientador{Prof. Dr. Orientador da Silva}
+\local{Cidade}
+\data{\today}
+
+\preambulo{Trabalho de Conclusão de Curso apresentado ao curso de Bacharelado em Ciência da Computação da Universidade Federal de Exemplo, como requisito parcial para a obtenção do título de Bacharel em Ciência da Computação.}
+</code></pre>
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Corpo do Documento e Citações ABNT</h3>
+                        <p class="text-stone-700 mb-4">O corpo do documento é dividido em partes textuais e pós-textuais. O pacote <code>abntex2cite</code> modifica o comando <code>\cite</code> para seguir o padrão ABNT e oferece variações úteis.</p>
+
+                        <div>
+                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX (Corpo do Documento)</h4>
+                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                                <button class="copy-button">Copiar</button>
+                                <pre><code class="language-latex">\begin{document}
+\imprimircapa
+\imprimirfolhaderosto
+
+\begin{resumo}
+Este trabalho analisa...
+\palavraschave{Otimização. Algoritmos. LaTeX.}
+\end{resumo}
+
+\tableofcontents % Gera o sumário automaticamente
+
+% --- Elementos Textuais ---
+\textual
+\chapter{Introdução}
+O estudo de algoritmos é fundamental \cite{cormen2009}. 
+Segundo \citeonline{knuth1984}, a análise de algoritmos...
+
+Para citações diretas com mais de três linhas:
+\begin{citacao}
+O processo de criação de um programa de computador pode ser bastante complexo e propenso a erros. A utilização de metodologias de desenvolvimento bem definidas é, portanto, essencial. \cite[p. 42]{pressman2010}
+\end{citacao}
+
+% --- Elementos Pós-Textuais ---
+\postextual
+\bibliography{referencias}
+\end{document}
+</code></pre>
+                            </div>
+                            <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado (Trechos)</h4>
+                            <div class="latex-preview p-6 border rounded-md bg-stone-100">
+                                <h2 class="text-2xl font-bold">1 Introdução</h2>
+                                <p class="my-2">O estudo de algoritmos é fundamental (CORMEN et al., 2009). Segundo Knuth (1984), a análise de algoritmos...</p>
+                                <p class="my-2">Para citações diretas com mais de três linhas:</p>
+                                <div class="ml-10 text-sm my-2 italic">
+                                    <p>O processo de criação de um programa de computador pode ser bastante complexo e propenso a erros. A utilização de metodologias de desenvolvimento bem definidas é, portanto, essencial. (PRESSMAN, 2010, p. 42)</p>
+                                </div>
+                                <h2 class="text-2xl font-bold mt-6">Referências</h2>
+                                <p class="my-2">CORMEN, T. H. et al. <b>Introduction to Algorithms</b>. 3. ed. Cambridge, MA: MIT Press, 2009.</p>
+                                <p class="my-2">KNUTH, D. E. <b>The TeXbook</b>. Reading, MA: Addison-Wesley, 1984.</p>
+                                <p class="my-2">PRESSMAN, R. S. <b>Software Engineering: A Practitioner's Approach</b>. 7. ed. New York: McGraw-Hill, 2010.</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 exercise-block">
+                            <h3 class="text-2xl font-semibold text-teal-800 mb-3">Proposta de Exercícios</h3>
+                            <ol class="list-decimal list-inside space-y-2 text-stone-700">
+                                <li>Crie um novo projeto no Overleaf usando um dos templates oficiais do `abntex2`. Explore a estrutura dos arquivos.</li>
+                                <li>Preencha as informações do seu próprio "TCC" fictício (título, autor, curso, etc.).</li>
+                                <li>Escreva um resumo e adicione de 3 a 5 palavras-chave.</li>
+                                <li>No capítulo de introdução, use os comandos <code>\cite</code>, <code>\citeonline</code> e o ambiente <code>citacao</code> para referenciar as fontes da sua bibliografia.</li>
+                                <li>Recompile e observe como a capa, folha de rosto, sumário e as citações são formatados automaticamente.</li>
+                            </ol>
+                        </div>
                     </div>
                 </section>
-
         </main>
     </div>
     

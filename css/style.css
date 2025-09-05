@@ -3,6 +3,10 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+.latex-preview {
+    font-family: 'Lora', serif;
+}
+
 /* --- Scrollbar Styles --- */
 ::-webkit-scrollbar {
     width: 8px;
@@ -54,10 +58,11 @@ body {
     color: #f0fdfa;
 }
 
-/* --- Component: Expert Tip Box --- */
-.expert-tip {
+/* --- Component: Highlight / Tip Box --- */
+.expert-tip,
+.exercise-block {
     background-color: #f0fdfa;
     border-left: 4px solid #14b8a6;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 0 0.5rem 0.5rem 0;
 }
