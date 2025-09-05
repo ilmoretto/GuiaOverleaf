@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     renderMathematics();
     setupCopyButtons();
     setupNavigationObserver();
+    setupSidebarActiveLink(); // <<< incremento: destaca link ativo do sidebar
 });
 
 /**
@@ -88,4 +89,58 @@ function setupNavigationObserver() {
     }, { rootMargin: '-40% 0px -60% 0px' });
     
     sections.forEach(section => observer.observe(section));
+}
+
+/* =========================
+   INCREMENTO: destacar link ativo no sidebar
+   ========================= */
+
+/**
+ * Destaca no sidebar o link correspondente à página atual.
+ * - não altera HTML
+ * - usa classes Tailwind já presentes (bg-stone-700, text-white)
+ * - adiciona aria-current="page" para acessibilidade
+ */
+function setupSidebarActiveLink() {
+    try {
+        const links = document.querySelectorAll('#sidebar a');
+        if (!links || !links.length) return;
+
+        // normaliza caminho removendo barras finais e garantindo "/" para raiz
+        const normalize = (p) => {
+            if (!p) return '/';
+            // remove query e hash
+            p = p.split('?')[0].split('#')[0];
+            // remove múltiplas barras finais
+            p = p.replace(/\/+$/, '');
+            return p === '' ? '/' : p;
+        };
+
+        const currentPath = normalize(location.pathname);
+
+        links.forEach(a => {
+            try {
+                // usa new URL para resolver caminhos relativos corretamente
+                const url = new URL(a.getAttribute('href'), location.origin);
+                const linkPath = normalize(url.pathname);
+
+                // tratar index.html vs root '/'
+                const isIndexMatch =
+                    (currentPath === '/' && (linkPath === '/index.html' || linkPath === '/')) ||
+                    (linkPath === '/index.html' && currentPath === '/');
+
+                if (linkPath === currentPath || isIndexMatch) {
+                    // aplica destaque visual (mesmo look que você usou: bg-stone-700 + text-white)
+                    a.classList.add('bg-stone-700', 'text-white');
+                    // marca semanticamente como atual
+                    a.setAttribute('aria-current', 'page');
+                }
+            } catch (errLink) {
+                // se URL inválida, ignora silenciosamente
+                console.warn('setupSidebarActiveLink: não foi possível processar href:', a.getAttribute('href'), errLink);
+            }
+        });
+    } catch (err) {
+        console.error('Erro em setupSidebarActiveLink:', err);
+    }
 }

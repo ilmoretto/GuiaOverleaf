@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +16,11 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
         onload="renderMathInElement(document.body);"></script>
-    <script src="js/script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-latex.min.js"></script>
+    <script src="../js/script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
-    
+
 
 </head>
 
@@ -30,65 +31,81 @@
             class="fixed top-0 left-0 h-screen w-64 bg-stone-800 text-stone-200 p-5 hidden lg:block overflow-y-auto">
             <h2 class="text-xl font-bold mb-6 text-teal-300">Guia de LaTeX</h2>
             <ul class="space-y-2">
-                <li><a href="../index.html" class="block py-2 px-4 rounded hover:bg-stone-700">Início</a></li>
-                <li><a href="filosofia.html" class="block py-2 px-4 rounded bg-stone-700">Filosofia</a></li>
-                <li><a href="modulo1.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 1: O Essencial</a>
+                <li><a href="../index.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Início</a></li>
+                <li><a href="filosofia.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Filosofia</a>
                 </li>
-                <li><a href="modulo2.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 2: Estrutura</a>
-                </li>
-                <li><a href="modulo3.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 3: Matemática</a>
-                </li>
-                <li><a href="modulo4.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 4: Flutuantes</a>
-                </li>
-                <li><a href="modulo5.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 5: Bibliografia</a>
-                </li>
-                <li><a href="modulo6.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 6: Padrão ABNT</a>
-                </li>
-                <li><a href="modulo7.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 7: Customização</a>
-                </li>
-                <li><a href="modulo8.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 8: Projeto Final</a>
-                </li>
-                <!-- ...continua... tan dan dan dan dan dandarudandandandan -->
+                <li><a href="modulo1.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 1: O
+                        Essencial</a></li>
+                <li><a href="modulo2.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 2:
+                        Estrutura</a></li>
+                <li><a href="modulo3.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 3:
+                        Matemática</a></li>
+                <li><a href="modulo4.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 4:
+                        Flutuantes</a></li>
+                <li><a href="modulo5.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 5:
+                        Bibliografia</a></li>
+                <li><a href="modulo6.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 6: Padrão
+                        ABNT</a></li>
+                <li><a href="modulo7.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 7:
+                        Customização</a></li>
+                <li><a href="modulo8.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 8: Projeto
+                        Final</a></li>
             </ul>
+
         </nav>
 
         <main class="w-full lg:ml-64 p-4 sm:p-6 md:p-10">
             <section id="modulo8" class="module-section">
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
-                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 8: Projeto Final - Seu Primeiro Artigo Acadêmico</h2>
-                        <p class="text-stone-700 mb-6">Chegou a hora de consolidar todo o conhecimento adquirido em um projeto prático. O objetivo é criar um pequeno artigo acadêmico (de 3 a 5 páginas), do zero, utilizando a classe <code>abntex2</code> e aplicando as melhores práticas que aprendemos ao longo deste guia.</p>
+                <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
+                    <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 8: Projeto
+                        Final - Seu Primeiro Artigo Acadêmico</h2>
+                    <p class="text-stone-700 mb-6">Chegou a hora de consolidar todo o conhecimento adquirido em um
+                        projeto prático. O objetivo é criar um pequeno artigo acadêmico (de 3 a 5 páginas), do zero,
+                        utilizando a classe <code>abntex2</code> e aplicando as melhores práticas que aprendemos ao
+                        longo deste guia.</p>
 
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">Briefing do Projeto</h3>
-                        <p class="text-stone-700 mb-4">Você irá criar um documento sobre um tema de sua escolha (pode ser um resumo de um filme, um artigo sobre seu hobby, uma breve revisão de um tópico que você domina). O documento deve ter a seguinte estrutura:</p>
-                        <ul class="list-disc list-inside space-y-3 text-stone-700">
-                            <li><strong>Estrutura ABNT Completa:</strong> Capa, Folha de Rosto, Resumo, Palavras-Chave e Sumário devem ser gerados automaticamente.</li>
-                            <li><strong>Conteúdo Organizado:</strong> O corpo textual deve ser dividido em, no mínimo, três capítulos: Introdução, Desenvolvimento e Conclusão.</li>
-                            <li><strong>Conteúdo Rico:</strong> O capítulo de Desenvolvimento deve conter obrigatoriamente:
-                                <ul class="list-disc list-inside ml-6 mt-2">
-                                    <li>Pelo menos uma <strong>figura</strong> com legenda, label e referência no texto.</li>
-                                    <li>Pelo menos uma <strong>tabela</strong> com legenda, label e referência no texto.</li>
-                                    <li>Pelo menos uma <strong>equação</strong> numerada com label e referência no texto.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Referências:</strong> A bibliografia deve ser gerenciada por um arquivo <code>.bib</code> externo com pelo menos 3 entradas. Todas as entradas devem ser citadas no texto.</li>
-                            <li><strong>Código Limpo:</strong> O projeto deve ser organizado em múltiplos arquivos, com um <code>main.tex</code> principal e arquivos separados para cada capítulo.</li>
-                        </ul>
+                    <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">Briefing do Projeto</h3>
+                    <p class="text-stone-700 mb-4">Você irá criar um documento sobre um tema de sua escolha (pode ser um
+                        resumo de um filme, um artigo sobre seu hobby, uma breve revisão de um tópico que você domina).
+                        O documento deve ter a seguinte estrutura:</p>
+                    <ul class="list-disc list-inside space-y-3 text-stone-700">
+                        <li><strong>Estrutura ABNT Completa:</strong> Capa, Folha de Rosto, Resumo, Palavras-Chave e
+                            Sumário devem ser gerados automaticamente.</li>
+                        <li><strong>Conteúdo Organizado:</strong> O corpo textual deve ser dividido em, no mínimo, três
+                            capítulos: Introdução, Desenvolvimento e Conclusão.</li>
+                        <li><strong>Conteúdo Rico:</strong> O capítulo de Desenvolvimento deve conter obrigatoriamente:
+                            <ul class="list-disc list-inside ml-6 mt-2">
+                                <li>Pelo menos uma <strong>figura</strong> com legenda, label e referência no texto.
+                                </li>
+                                <li>Pelo menos uma <strong>tabela</strong> com legenda, label e referência no texto.
+                                </li>
+                                <li>Pelo menos uma <strong>equação</strong> numerada com label e referência no texto.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Referências:</strong> A bibliografia deve ser gerenciada por um arquivo
+                            <code>.bib</code> externo com pelo menos 3 entradas. Todas as entradas devem ser citadas no
+                            texto.</li>
+                        <li><strong>Código Limpo:</strong> O projeto deve ser organizado em múltiplos arquivos, com um
+                            <code>main.tex</code> principal e arquivos separados para cada capítulo.</li>
+                    </ul>
 
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Estrutura de Arquivos Sugerida</h3>
-                        <p class="text-stone-700 mb-4">No seu projeto Overleaf, crie a seguinte estrutura de arquivos:</p>
-                        <ul class="list-disc list-inside font-mono text-sm text-teal-800 space-y-1">
-                            <li><code>main.tex</code> (o arquivo principal)</li>
-                            <li><code>cap-introducao.tex</code></li>
-                            <li><code>cap-desenvolvimento.tex</code></li>
-                            <li><code>cap-conclusao.tex</code></li>
-                            <li><code>bibliografia.bib</code></li>
-                        </ul>
+                    <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Estrutura de Arquivos Sugerida</h3>
+                    <p class="text-stone-700 mb-4">No seu projeto Overleaf, crie a seguinte estrutura de arquivos:</p>
+                    <ul class="list-disc list-inside font-mono text-sm text-teal-800 space-y-1">
+                        <li><code>main.tex</code> (o arquivo principal)</li>
+                        <li><code>cap-introducao.tex</code></li>
+                        <li><code>cap-desenvolvimento.tex</code></li>
+                        <li><code>cap-conclusao.tex</code></li>
+                        <li><code>bibliografia.bib</code></li>
+                    </ul>
 
-                        <div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX (Template para <code>main.tex</code>)</h4>
-                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
-                                <button class="copy-button">Copiar</button>
-                                <pre><code class="language-latex">\documentclass[12pt, a4paper, oneside]{abntex2}
+                    <div>
+                        <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX (Template para
+                            <code>main.tex</code>)</h4>
+                        <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                            <button class="copy-button">Copiar</button>
+                            <pre><code class="language-latex">\documentclass[12pt, a4paper, oneside]{abntex2}
 % --- Pacotes Essenciais ---
 \usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
@@ -129,24 +146,30 @@
 
 \end{document}
 </code></pre>
-                            </div>
-                        </div>
-
-                        <div class="mt-8 exercise-block">
-                            <h3 class="text-2xl font-semibold text-teal-800 mb-3">Passos para a Execução</h3>
-                            <ol class="list-decimal list-inside space-y-2 text-stone-700">
-                                <li>Crie a estrutura de arquivos sugerida no seu projeto Overleaf.</li>
-                                <li>Copie o template acima para o seu arquivo <code>main.tex</code> e preencha suas informações.</li>
-                                <li>Desenvolva o conteúdo de cada capítulo nos arquivos <code>.tex</code> correspondentes. Lembre-se de cumprir os requisitos de conteúdo rico para o capítulo de desenvolvimento.</li>
-                                <li>Popule seu arquivo <code>bibliografia.bib</code> com pelo menos três fontes e cite-as ao longo do seu texto.</li>
-                                <li>Compile seu projeto frequentemente para corrigir erros à medida que aparecem.</li>
-                                <li><strong>Parabéns!</strong> Ao concluir, você terá criado um documento acadêmico completo e bem estruturado, demonstrando seu domínio sobre os principais recursos do LaTeX.</li>
-                            </ol>
                         </div>
                     </div>
-                </section>
+
+                    <div class="mt-8 exercise-block">
+                        <h3 class="text-2xl font-semibold text-teal-800 mb-3">Passos para a Execução</h3>
+                        <ol class="list-decimal list-inside space-y-2 text-stone-700">
+                            <li>Crie a estrutura de arquivos sugerida no seu projeto Overleaf.</li>
+                            <li>Copie o template acima para o seu arquivo <code>main.tex</code> e preencha suas
+                                informações.</li>
+                            <li>Desenvolva o conteúdo de cada capítulo nos arquivos <code>.tex</code> correspondentes.
+                                Lembre-se de cumprir os requisitos de conteúdo rico para o capítulo de desenvolvimento.
+                            </li>
+                            <li>Popule seu arquivo <code>bibliografia.bib</code> com pelo menos três fontes e cite-as ao
+                                longo do seu texto.</li>
+                            <li>Compile seu projeto frequentemente para corrigir erros à medida que aparecem.</li>
+                            <li><strong>Parabéns!</strong> Ao concluir, você terá criado um documento acadêmico completo
+                                e bem estruturado, demonstrando seu domínio sobre os principais recursos do LaTeX.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
-    
+
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +16,11 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
         onload="renderMathInElement(document.body);"></script>
-    <script src="js/script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-latex.min.js"></script>
+    <script src="../js/script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
-    
+
 
 </head>
 
@@ -30,42 +31,52 @@
             class="fixed top-0 left-0 h-screen w-64 bg-stone-800 text-stone-200 p-5 hidden lg:block overflow-y-auto">
             <h2 class="text-xl font-bold mb-6 text-teal-300">Guia de LaTeX</h2>
             <ul class="space-y-2">
-                <li><a href="../index.html" class="block py-2 px-4 rounded hover:bg-stone-700">Início</a></li>
-                <li><a href="filosofia.html" class="block py-2 px-4 rounded bg-stone-700">Filosofia</a></li>
-                <li><a href="modulo1.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 1: O Essencial</a>
+                <li><a href="../index.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Início</a></li>
+                <li><a href="filosofia.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Filosofia</a>
                 </li>
-                <li><a href="modulo2.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 2: Estrutura</a>
-                </li>
-                <li><a href="modulo3.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 3: Matemática</a>
-                </li>
-                <li><a href="modulo4.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 4: Flutuantes</a>
-                </li>
-                <li><a href="modulo5.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 5: Bibliografia</a>
-                </li>
-                <li><a href="modulo6.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 6: Padrão ABNT</a>
-                </li>
-                <li><a href="modulo7.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 7: Customização</a>
-                </li>
-                <li><a href="modulo8.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 8: Projeto Final</a>
-                </li>
-                <!-- ...continua... tan dan dan dan dan dandarudandandandan -->
+                <li><a href="modulo1.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 1: O
+                        Essencial</a></li>
+                <li><a href="modulo2.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 2:
+                        Estrutura</a></li>
+                <li><a href="modulo3.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 3:
+                        Matemática</a></li>
+                <li><a href="modulo4.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 4:
+                        Flutuantes</a></li>
+                <li><a href="modulo5.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 5:
+                        Bibliografia</a></li>
+                <li><a href="modulo6.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 6: Padrão
+                        ABNT</a></li>
+                <li><a href="modulo7.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 7:
+                        Customização</a></li>
+                <li><a href="modulo8.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 8: Projeto
+                        Final</a></li>
             </ul>
+
         </nav>
 
         <main class="w-full lg:ml-64 p-4 sm:p-6 md:p-10">
             <section id="modulo7" class="module-section">
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
-                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 7: Customização e Escalando Projetos</h2>
-                        <p class="text-stone-700 mb-6">À medida que seus documentos se tornam mais complexos, você perceberá que repete os mesmos blocos de código ou formatações. O LaTeX permite criar seus próprios comandos e ambientes para automatizar essas tarefas, tornando seu código mais limpo, legível e fácil de manter. Além disso, vamos ver como organizar projetos grandes em múltiplos arquivos.</p>
+                <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
+                    <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 7:
+                        Customização e Escalando Projetos</h2>
+                    <p class="text-stone-700 mb-6">À medida que seus documentos se tornam mais complexos, você perceberá
+                        que repete os mesmos blocos de código ou formatações. O LaTeX permite criar seus próprios
+                        comandos e ambientes para automatizar essas tarefas, tornando seu código mais limpo, legível e
+                        fácil de manter. Além disso, vamos ver como organizar projetos grandes em múltiplos arquivos.
+                    </p>
 
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">Criando Seus Próprios Comandos com <code>\newcommand</code></h3>
-                        <p class="text-stone-700 mb-4">O comando <code>\newcommand{\nome_do_comando}[num_args]{definicao}</code> permite criar atalhos. Isso é útil para termos técnicos, notações matemáticas ou qualquer formatação que você usa repetidamente.</p>
-                        
-                        <div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
-                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
-                                <button class="copy-button">Copiar</button>
-                                <pre><code class="language-latex">\usepackage{amsfonts} % para \mathbb
+                    <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">Criando Seus Próprios Comandos com
+                        <code>\newcommand</code></h3>
+                    <p class="text-stone-700 mb-4">O comando
+                        <code>\newcommand{\nome_do_comando}[num_args]{definicao}</code> permite criar atalhos. Isso é
+                        útil para termos técnicos, notações matemáticas ou qualquer formatação que você usa
+                        repetidamente.</p>
+
+                    <div>
+                        <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
+                        <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                            <button class="copy-button">Copiar</button>
+                            <pre><code class="language-latex">\usepackage{amsfonts} % para \mathbb
 % --- Comandos definidos no preâmbulo ---
 \newcommand{\R}{\mathbb{R}} % Comando sem argumentos
 \newcommand{\keyword}[1]{\texttt{#1}} % Comando com 1 argumento
@@ -74,22 +85,26 @@
 O conjunto dos números reais é denotado por $\R$.
 A palavra-chave \keyword{for} é usada para laços de repetição.
 </code></pre>
-                            </div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
-                            <div class="latex-preview p-6 border rounded-md bg-stone-100">
-                                <p>O conjunto dos números reais é denotado por \(\mathbb{R}\).</p>
-                                <p>A palavra-chave <code class="bg-gray-200 px-1 rounded">for</code> é usada para laços de repetição.</p>
-                            </div>
                         </div>
+                        <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
+                        <div class="latex-preview p-6 border rounded-md bg-stone-100">
+                            <p>O conjunto dos números reais é denotado por \(\mathbb{R}\).</p>
+                            <p>A palavra-chave <code class="bg-gray-200 px-1 rounded">for</code> é usada para laços de
+                                repetição.</p>
+                        </div>
+                    </div>
 
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Criando Seus Próprios Ambientes com <code>\newenvironment</code></h3>
-                        <p class="text-stone-700 mb-4">Para blocos de conteúdo com uma estrutura de início e fim, como caixas de destaque, exemplos ou exercícios, você pode criar um ambiente. A sintaxe é <code>\newenvironment{nome}{código_inicial}{código_final}</code>.</p>
-                        
-                        <div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
-                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
-                                <button class="copy-button">Copiar</button>
-                                <pre><code class="language-latex">% --- Ambiente definido no preâmbulo ---
+                    <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Criando Seus Próprios Ambientes com
+                        <code>\newenvironment</code></h3>
+                    <p class="text-stone-700 mb-4">Para blocos de conteúdo com uma estrutura de início e fim, como
+                        caixas de destaque, exemplos ou exercícios, você pode criar um ambiente. A sintaxe é
+                        <code>\newenvironment{nome}{código_inicial}{código_final}</code>.</p>
+
+                    <div>
+                        <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
+                        <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                            <button class="copy-button">Copiar</button>
+                            <pre><code class="language-latex">% --- Ambiente definido no preâmbulo ---
 \newenvironment{destaque}
     {\begin{quote}\sffamily\bfseries}
     {\end{quote}}
@@ -100,36 +115,52 @@ A palavra-chave \keyword{for} é usada para laços de repetição.
     visual no documento.
 \end{destaque}
 </code></pre>
-                            </div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
-                            <div class="latex-preview p-6 border rounded-md bg-stone-100">
-                                 <blockquote class="border-l-4 border-gray-300 pl-4 my-4">
-                                    <p class="font-sans font-bold">Esta é uma informação importante que precisa de destaque visual no documento.</p>
-                                </blockquote>
-                            </div>
                         </div>
-                        
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Organizando Documentos Grandes com <code>\input</code> e <code>\include</code></h3>
-                        <p class="text-stone-700 mb-4">Escrever uma tese inteira em um único arquivo <code>.tex</code> é inviável. A melhor prática é dividir o trabalho em arquivos menores (um para cada capítulo, por exemplo) e juntá-los no arquivo principal.</p>
-                        <ul class="list-disc list-inside space-y-2 text-stone-700">
-                            <li><code>\input{capitulo1.tex}</code>: Age como um "copia e cola". O conteúdo do arquivo <code>capitulo1.tex</code> é inserido exatamente naquele ponto. É simples e eficaz para arquivos menores.</li>
-                            <li><code>\include{capitulo2}</code>: É mais robusto. Ele sempre inicia uma nova página antes de inserir o conteúdo e é mais inteligente para o processo de compilação. Para documentos muito grandes, você pode usar <code>\includeonly{capitulo2}</code> no preâmbulo para compilar apenas aquele capítulo, economizando muito tempo.</li>
-                        </ul>
-
-                        <div class="mt-8 exercise-block">
-                            <h3 class="text-2xl font-semibold text-teal-800 mb-3">Proposta de Exercícios</h3>
-                            <ol class="list-decimal list-inside space-y-2 text-stone-700">
-                                <li>Crie um <code>\newcommand</code> chamado <code>\latex</code> que produza a palavra "LaTeX" com a formatação correta. (Dica: o comando original é <code>\LaTeX</code>).</li>
-                                <li>Crie um novo ambiente chamado <code>exercicio</code> que coloque o texto dentro de uma caixa e em itálico. (Dica: pesquise o ambiente <code>quote</code> e o comando <code>\itshape</code>).</li>
-                                <li>Crie dois novos arquivos no seu projeto: <code>introducao.tex</code> e <code>desenvolvimento.tex</code>.</li>
-                                <li>Mova o conteúdo das suas seções de introdução e desenvolvimento do arquivo principal para esses novos arquivos.</li>
-                                <li>Use o comando <code>\input{}</code> no arquivo principal para incluir o conteúdo dos novos arquivos e recompile para garantir que tudo funcione.</li>
-                            </ol>
+                        <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
+                        <div class="latex-preview p-6 border rounded-md bg-stone-100">
+                            <blockquote class="border-l-4 border-gray-300 pl-4 my-4">
+                                <p class="font-sans font-bold">Esta é uma informação importante que precisa de destaque
+                                    visual no documento.</p>
+                            </blockquote>
                         </div>
                     </div>
-                </section>
+
+                    <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Organizando Documentos Grandes com
+                        <code>\input</code> e <code>\include</code></h3>
+                    <p class="text-stone-700 mb-4">Escrever uma tese inteira em um único arquivo <code>.tex</code> é
+                        inviável. A melhor prática é dividir o trabalho em arquivos menores (um para cada capítulo, por
+                        exemplo) e juntá-los no arquivo principal.</p>
+                    <ul class="list-disc list-inside space-y-2 text-stone-700">
+                        <li><code>\input{capitulo1.tex}</code>: Age como um "copia e cola". O conteúdo do arquivo
+                            <code>capitulo1.tex</code> é inserido exatamente naquele ponto. É simples e eficaz para
+                            arquivos menores.</li>
+                        <li><code>\include{capitulo2}</code>: É mais robusto. Ele sempre inicia uma nova página antes de
+                            inserir o conteúdo e é mais inteligente para o processo de compilação. Para documentos muito
+                            grandes, você pode usar <code>\includeonly{capitulo2}</code> no preâmbulo para compilar
+                            apenas aquele capítulo, economizando muito tempo.</li>
+                    </ul>
+
+                    <div class="mt-8 exercise-block">
+                        <h3 class="text-2xl font-semibold text-teal-800 mb-3">Proposta de Exercícios</h3>
+                        <ol class="list-decimal list-inside space-y-2 text-stone-700">
+                            <li>Crie um <code>\newcommand</code> chamado <code>\latex</code> que produza a palavra
+                                "LaTeX" com a formatação correta. (Dica: o comando original é <code>\LaTeX</code>).</li>
+                            <li>Crie um novo ambiente chamado <code>exercicio</code> que coloque o texto dentro de uma
+                                caixa e em itálico. (Dica: pesquise o ambiente <code>quote</code> e o comando
+                                <code>\itshape</code>).</li>
+                            <li>Crie dois novos arquivos no seu projeto: <code>introducao.tex</code> e
+                                <code>desenvolvimento.tex</code>.</li>
+                            <li>Mova o conteúdo das suas seções de introdução e desenvolvimento do arquivo principal
+                                para esses novos arquivos.</li>
+                            <li>Use o comando <code>\input{}</code> no arquivo principal para incluir o conteúdo dos
+                                novos arquivos e recompile para garantir que tudo funcione.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
-    
+
 </body>
+
 </html>

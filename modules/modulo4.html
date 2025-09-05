@@ -20,7 +20,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-latex.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
-    
+
 
 </head>
 
@@ -31,47 +31,49 @@
             class="fixed top-0 left-0 h-screen w-64 bg-stone-800 text-stone-200 p-5 hidden lg:block overflow-y-auto">
             <h2 class="text-xl font-bold mb-6 text-teal-300">Guia de LaTeX</h2>
             <ul class="space-y-2">
-                <li><a href="../index.html" class="block py-2 px-4 rounded hover:bg-stone-700">Início</a></li>
-                <li><a href="filosofia.html" class="block py-2 px-4 rounded bg-stone-700">Filosofia</a></li>
-                <li><a href="modulo1.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 1: O Essencial</a>
+                <li><a href="../index.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Início</a></li>
+                <li><a href="filosofia.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Filosofia</a>
                 </li>
-                <li><a href="modulo2.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 2: Estrutura</a>
-                </li>
-                <li><a href="modulo3.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 3: Matemática</a>
-                </li>
-                <li><a href="modulo4.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 4: Flutuantes</a>
-                </li>
-                <li><a href="modulo5.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 5: Bibliografia</a>
-                </li>
-                <li><a href="modulo6.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 6: Padrão ABNT</a>
-                </li>
-                <li><a href="modulo7.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 7: Customização</a>
-                </li>
-                <li><a href="modulo8.html" class="block py-2 px-4 rounded hover:bg-stone-700">Módulo 8: Projeto Final</a>
-                </li>
-                <!-- ...continua... tan dan dan dan dan dandarudandandandan -->
+                <li><a href="modulo1.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 1: O
+                        Essencial</a></li>
+                <li><a href="modulo2.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 2:
+                        Estrutura</a></li>
+                <li><a href="modulo3.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 3:
+                        Matemática</a></li>
+                <li><a href="modulo4.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 4:
+                        Flutuantes</a></li>
+                <li><a href="modulo5.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 5:
+                        Bibliografia</a></li>
+                <li><a href="modulo6.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 6: Padrão
+                        ABNT</a></li>
+                <li><a href="modulo7.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 7:
+                        Customização</a></li>
+                <li><a href="modulo8.html" class="nav-link block py-2 px-4 rounded hover:bg-stone-700">Módulo 8: Projeto
+                        Final</a></li>
             </ul>
+
         </nav>
 
         <main class="w-full lg:ml-64 p-4 sm:p-6 md:p-10">
             <section id="modulo4" class="module-section">
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
-                        <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 4:
-                            Elementos Flutuantes: Figuras e Tabelas</h2>
-                        <p class="text-stone-700 mb-6">Documentos técnicos e acadêmicos raramente contêm apenas texto.
-                            Aprender a incorporar figuras e tabelas é um passo essencial. No LaTeX, esses elementos são
-                            tratados como "flutuantes", pois o LaTeX pode movê-los para um local ótimo na página para
-                            evitar quebras de página ruins e manter um bom layout.</p>
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">Inserindo Figuras</h3>
-                        <p class="text-stone-700 mb-4">Para inserir imagens, você precisa do pacote
-                            <code>graphicx</code>. O processo envolve três comandos principais dentro do ambiente
-                            <code>figure</code>: <code>\includegraphics</code> para incluir o arquivo da imagem,
-                            <code>\caption</code> para a legenda e <code>\label</code> para a referência cruzada.</p>
-                        <div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
-                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
-                                <button class="copy-button" aria-label="Copiar código">Copiar</button>
-                                <pre><code class="language-latex">\usepackage{graphicx}
+                <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
+                    <h2 class="text-3xl font-bold text-stone-800 border-b-4 border-teal-500 pb-2 mb-6">Módulo 4:
+                        Elementos Flutuantes: Figuras e Tabelas</h2>
+                    <p class="text-stone-700 mb-6">Documentos técnicos e acadêmicos raramente contêm apenas texto.
+                        Aprender a incorporar figuras e tabelas é um passo essencial. No LaTeX, esses elementos são
+                        tratados como "flutuantes", pois o LaTeX pode movê-los para um local ótimo na página para
+                        evitar quebras de página ruins e manter um bom layout.</p>
+                    <h3 class="text-2xl font-semibold text-teal-700 mt-6 mb-3">Inserindo Figuras</h3>
+                    <p class="text-stone-700 mb-4">Para inserir imagens, você precisa do pacote
+                        <code>graphicx</code>. O processo envolve três comandos principais dentro do ambiente
+                        <code>figure</code>: <code>\includegraphics</code> para incluir o arquivo da imagem,
+                        <code>\caption</code> para a legenda e <code>\label</code> para a referência cruzada.
+                    </p>
+                    <div>
+                        <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
+                        <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                            <button class="copy-button" aria-label="Copiar código">Copiar</button>
+                            <pre><code class="language-latex">\usepackage{graphicx}
 % ...
 Como vemos na Figura~\ref{fig:logo}, o logotipo é simples.
 \begin{figure}[ht]
@@ -81,35 +83,36 @@ Como vemos na Figura~\ref{fig:logo}, o logotipo é simples.
     \caption{Logotipo da Empresa.}
     \label{fig:logo}
 \end{figure}</code></pre>
-                            </div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
-                            <div class="latex-preview p-6 border rounded-md bg-stone-100">
-                                <p>Como vemos na Figura 1, o logotipo é simples.</p>
-                                <div class="my-4 p-4 border w-full text-center">
-                                    <div class="w-1/2 mx-auto bg-gray-300 flex items-center justify-center h-24">
-                                        <span class="text-gray-600">[Imagem de placeholder.png]</span>
-                                    </div>
-                                    <p class="mt-2 font-semibold">Figura 1: Logotipo da Empresa.</p>
-                                </div>
-                            </div>
-                            
                         </div>
-                        <p class="text-stone-700 mt-4"><strong>Nota:</strong> Para o código funcionar, você precisa
-                            fazer o upload da imagem (ex: <code>placeholder.png</code>) para o seu projeto no Overleaf.
-                            A opção <code>[ht]</code> é uma sugestão para o LaTeX: tente posicionar a figura "aqui"
-                            (here) ou no "topo" (top) da página.</p>
-                        <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Construindo Tabelas Profissionais
-                        </h3>
-                        <p class="text-stone-700 mb-4">Tabelas são criadas com o ambiente <code>tabular</code>. Para um
-                            visual mais limpo e profissional, é altamente recomendável usar o pacote
-                            <code>booktabs</code>, que fornece linhas horizontais com espaçamentos melhores
-                            (<code>\toprule</code>, <code>\midrule</code>, <code>\bottomrule</code>) e desencoraja o uso
-                            de linhas verticais.</p>
-                        <div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
-                            <div class="code-block bg-stone-800 text-white p-4 rounded-md">
-                                <button class="copy-button" aria-label="Copiar código">Copiar</button>
-                                <pre><code class="language-latex">\usepackage{booktabs}
+                        <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
+                        <div class="latex-preview p-6 border rounded-md bg-stone-100">
+                            <p>Como vemos na Figura 1, o logotipo é simples.</p>
+                            <div class="my-4 p-4 border w-full text-center">
+                                <div class="w-1/2 mx-auto bg-gray-300 flex items-center justify-center h-24">
+                                    <span class="text-gray-600">[Imagem de placeholder.png]</span>
+                                </div>
+                                <p class="mt-2 font-semibold">Figura 1: Logotipo da Empresa.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p class="text-stone-700 mt-4"><strong>Nota:</strong> Para o código funcionar, você precisa
+                        fazer o upload da imagem (ex: <code>placeholder.png</code>) para o seu projeto no Overleaf.
+                        A opção <code>[ht]</code> é uma sugestão para o LaTeX: tente posicionar a figura "aqui"
+                        (here) ou no "topo" (top) da página.</p>
+                    <h3 class="text-2xl font-semibold text-teal-700 mt-8 mb-3">Construindo Tabelas Profissionais
+                    </h3>
+                    <p class="text-stone-700 mb-4">Tabelas são criadas com o ambiente <code>tabular</code>. Para um
+                        visual mais limpo e profissional, é altamente recomendável usar o pacote
+                        <code>booktabs</code>, que fornece linhas horizontais com espaçamentos melhores
+                        (<code>\toprule</code>, <code>\midrule</code>, <code>\bottomrule</code>) e desencoraja o uso
+                        de linhas verticais.
+                    </p>
+                    <div>
+                        <h4 class="font-semibold text-lg text-teal-700 mt-4 mb-2">Código LaTeX</h4>
+                        <div class="code-block bg-stone-800 text-white p-4 rounded-md">
+                            <button class="copy-button" aria-label="Copiar código">Copiar</button>
+                            <pre><code class="language-latex">\usepackage{booktabs}
 %...
 A Tabela~\ref{tab:dados} mostra os resultados.
 \begin{table}[ht]
@@ -125,58 +128,57 @@ A Tabela~\ref{tab:dados} mostra os resultados.
         \bottomrule
     \end{tabular}
 \end{table}</code></pre>
-                            </div>
-                            <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
-                            <div class="latex-preview p-6 border rounded-md bg-stone-100">
-                                <p>A Tabela 1 mostra os resultados.</p>
-                                <div class="w-full my-4">
-                                    <p class="text-center font-semibold mb-2">Tabela 1: Resultados da Simulação.</p>
-                                    <table class="w-full text-left mx-auto max-w-sm">
-                                        <thead class="border-b-2 border-black">
-                                            <tr>
-                                                <th class="pb-2 pr-4">Parâmetro</th>
-                                                <th class="pb-2 pr-4 text-center">Símbolo</th>
-                                                <th class="pb-2 text-right">Valor Médio</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="border-b-2 border-black">
-                                            <tr class="border-b border-gray-400">
-                                                <td class="py-2 pr-4">Velocidade</td>
-                                                <td class="py-2 pr-4 text-center">$v$</td>
-                                                <td class="py-2 text-right">25.4 m/s</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-2 pr-4">Aceleração</td>
-                                                <td class="py-2 pr-4 text-center">$a$</td>
-                                                <td class="py-2 text-right">9.8 m/s$^2$</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
                         </div>
-                        <div class="mt-8 exercise-block">
-                            <h3 class="text-2xl font-semibold text-teal-800 mb-3">Proposta de Exercícios</h3>
-                            <ol class="list-decimal list-inside space-y-2 text-stone-700">
-                                <li>Encontre uma imagem simples online (um gráfico, um diagrama) e faça o upload para o
-                                    seu projeto Overleaf.</li>
-                                <li>Use o ambiente <code>figure</code> para inserir esta imagem no seu documento.
-                                    Adicione uma legenda e um <code>\label</code>.</li>
-                                <li>Escreva um parágrafo que referencie a figura usando <code>\ref</code>.</li>
-                                <li>Crie uma tabela simples com 3 colunas (ex: "Produto", "Quantidade", "Preço") e 3
-                                    linhas de dados, usando as boas práticas do <code>booktabs</code>.</li>
-                                <li>Adicione uma legenda e um <code>\label</code> à sua tabela e referencie-a no texto.
-                                </li>
-                            </ol>
+                        <h4 class="font-semibold text-lg text-teal-700 mt-6 mb-2">Visualização do Resultado</h4>
+                        <div class="latex-preview p-6 border rounded-md bg-stone-100">
+                            <p>A Tabela 1 mostra os resultados.</p>
+                            <div class="w-full my-4">
+                                <p class="text-center font-semibold mb-2">Tabela 1: Resultados da Simulação.</p>
+                                <table class="w-full text-left mx-auto max-w-sm">
+                                    <thead class="border-b-2 border-black">
+                                        <tr>
+                                            <th class="pb-2 pr-4">Parâmetro</th>
+                                            <th class="pb-2 pr-4 text-center">Símbolo</th>
+                                            <th class="pb-2 text-right">Valor Médio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="border-b-2 border-black">
+                                        <tr class="border-b border-gray-400">
+                                            <td class="py-2 pr-4">Velocidade</td>
+                                            <td class="py-2 pr-4 text-center">$v$</td>
+                                            <td class="py-2 text-right">25.4 m/s</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 pr-4">Aceleração</td>
+                                            <td class="py-2 pr-4 text-center">$a$</td>
+                                            <td class="py-2 text-right">9.8 m/s$^2$</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                </section>
+                    <div class="mt-8 exercise-block">
+                        <h3 class="text-2xl font-semibold text-teal-800 mb-3">Proposta de Exercícios</h3>
+                        <ol class="list-decimal list-inside space-y-2 text-stone-700">
+                            <li>Encontre uma imagem simples online (um gráfico, um diagrama) e faça o upload para o
+                                seu projeto Overleaf.</li>
+                            <li>Use o ambiente <code>figure</code> para inserir esta imagem no seu documento.
+                                Adicione uma legenda e um <code>\label</code>.</li>
+                            <li>Escreva um parágrafo que referencie a figura usando <code>\ref</code>.</li>
+                            <li>Crie uma tabela simples com 3 colunas (ex: "Produto", "Quantidade", "Preço") e 3
+                                linhas de dados, usando as boas práticas do <code>booktabs</code>.</li>
+                            <li>Adicione uma legenda e um <code>\label</code> à sua tabela e referencie-a no texto.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-    <script src="../js/script.js" defer></script>
 </body>
 
 </html>
